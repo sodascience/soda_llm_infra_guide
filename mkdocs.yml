@@ -1,0 +1,35 @@
+site_name: Guide to LLM Computing Infrastructure in the Netherlands
+site_description: Practical guidance for researchers on using LLMs and institutional infrastructure in the Netherlands.
+site_url: https://example.org/llm-infra-guide
+
+theme:
+  name: gitbook
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - md_in_html
+  - tables
+
+plugins: []
+
+extra_css:
+  - stylesheets/search-fix.css
+
+nav:
+  - Home: index.md
+  - How to use LLMs in research:
+      - Overview: how-to-use-llms/overview.md
+      - Chat interface: how-to-use-llms/chat-interface.md
+      - LLM dashboards: how-to-use-llms/llm-dashboards.md
+      - APIs: how-to-use-llms/apis.md
+      - Local deployment: how-to-use-llms/local-deployment.md
+      - Remote deployment: how-to-use-llms/remote-deployment.md
+      - HPC: how-to-use-llms/hpc.md
+  - Institutional resources:
+      - Overview: institutional-resources/overview.md
+      - Chat interface: institutional-resources/chat-interface.md
+      - APIs: institutional-resources/apis.md
+      - Remote deployment: institutional-resources/remote-deployment.md
+      - HPC: institutional-resources/hpc.md
