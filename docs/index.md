@@ -1,6 +1,6 @@
-# Guide to LLM Computing Infrastructure in the Netherlands
+# The SoDa Guide to LLM Computing Infrastructure in the Netherlands
 
-This guide helps researchers choose the right way to use large language models (LLMs), from simple chat tools to advanced high-performance computing (HPC) workflows.
+This guide is intended to helps researchers choose the right way to use large language models (LLMs), from simple chat tools to advanced high-performance computing (HPC) workflows.
 
 It is written for mixed audiences:
 
