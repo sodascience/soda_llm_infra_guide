@@ -2,7 +2,7 @@
 
 ## What is this?
 
-An API (Application Programming Interface) lets your script or application talk directly to an LLM service. Instead of manually typing prompts in a chat window, your code sends requests and receives responses.
+An API (Application Programming Interface) lets your script or application talk directly to an LLM service. Instead of manually typing prompts in a chat window, your code sends requests and receives responses. 
 
 ## When should you use it?
 
