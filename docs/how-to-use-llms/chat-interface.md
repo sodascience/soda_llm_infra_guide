@@ -58,11 +58,3 @@ The interface manages conversation history for you, but typically hides system-l
 | Low technical barrier | Outputs are difficult to reproduce exactly |
 | Strong for brainstorming and writing support | Limited traceability of decisions and prompts |
 | No setup required | Risk of fluent but incorrect outputs |
-
----
-
-## Typical users
-
-- Researchers new to LLMs  
-- Students and research assistants preparing drafts  
-- Domain experts needing occasional coding or writing support  
