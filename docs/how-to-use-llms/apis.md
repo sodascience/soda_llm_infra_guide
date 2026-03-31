@@ -2,7 +2,7 @@
 
 ## What is this?
 
-An API (Application Programming Interface) lets your script or application talk directly to an LLM service. Instead of manually typing prompts in a chat window, your code sends requests and receives responses. 
+An API (Application Programming Interface) lets your script or application talk directly to an LLM service. Instead of manually typing prompts in a chat window, you write code (e.g., Python, R) to send requests and receive responses. 
 
 ## When should you use it?
 
@@ -10,6 +10,7 @@ An API (Application Programming Interface) lets your script or application talk 
 - You want to process many documents automatically
 - You need integration with research scripts, notebooks, or internal tools
 - You want better logging, evaluation, and versioning
+- You need control over input/output formats and parameters
 
 ## When should you NOT use it?
 
@@ -19,13 +20,17 @@ An API (Application Programming Interface) lets your script or application talk 
 
 ## How it works (simple explanation)
 
-Your code sends structured input (prompt, parameters, optional context) to an API endpoint. The service returns model output in a machine-readable format. This enables automation and consistent processing logic.
+Your code sends structured input (prompt, parameters, optional context) to an API endpoint. The API endpoint is, in short, a URL that accepts such input and returns model output in a machine-readable format. This enables automation and consistent processing logic.
 
 ## Concrete examples (tools/platforms)
 
-- Provider APIs (commercial or institutional)
-- [LangChain](https://www.langchain.com/) in Python for pipeline orchestration
-- [ellmer](https://ellmer.tidyverse.org/) in R for conversational and prompt workflows in data science contexts
+- Provider APIs (commercial or institutional). For example:
+    - [OpenAI API](https://developers.openai.com/api/docs) for GPT models
+    - [Claude API](https://docs.anthropic.com/claude/reference/getting-started) for Anthropic models
+    - [Gemini API](https://ai.google.dev/gemini-api) for Google models
+- API client libraries in Python, R, or other languages. These libraries simplify the process of sending requests and handling responses. For example:
+    - [LangChain](https://www.langchain.com/) in Python for pipeline orchestration
+    - [ellmer](https://ellmer.tidyverse.org/) in R for conversational and prompt workflows in data science contexts
 
 ## Example workflow (step-by-step)
 
@@ -43,9 +48,3 @@ Your code sends structured input (prompt, parameters, optional context) to an AP
 | Enables automation and scale | Requires scripting and API key management |
 | Supports reproducible pipelines | Cost management becomes important at volume |
 | Easier integration with existing tools | Governance checks may be more complex |
-
-## Typical users
-
-- Data-oriented researchers
-- Research software engineers
-- Teams building repeatable LLM-assisted analysis pipelines
