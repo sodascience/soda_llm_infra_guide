@@ -50,10 +50,4 @@ You submit jobs to a scheduler, usually as batch scripts. The scheduler places y
 | Access to high-end compute and storage | Queue times can delay iteration |
 | Strong fit for reproducible batch pipelines | Requires planning and resource estimation |
 
-## Typical users
-
-- Research software engineers
-- Computational method teams
-- Projects with strong scaling and throughput requirements
-
 ## Learning resources
