@@ -48,3 +48,12 @@ Your code sends structured input (prompt, parameters, optional context) to an AP
 | Enables automation and scale | Requires scripting and API key management |
 | Supports reproducible pipelines | Cost management becomes important at volume |
 | Easier integration with existing tools | Governance checks may be more complex |
+
+## Tutorial and learning resources
+- [Tutorial Paper: A Methodological Guide on Using Large Language Models for Text Annotation in the Social Sciences and Humanities with Python and R](osf.io/preprints/socarxiv/v4eq6_v2) (A SoDa-led preprint paper with code examples and best practices for LLM annotation workflows)
+- [SoDa Workshop: Using LLMs for Data Collection/Annotation in Social Sciences](https://sodascience.github.io/workshop_llm_data_collection/)
+    - [GitHub Repository](https://github.com/sodascience/workshop_llm_data_collection?tab=readme-ov-file) (with code notebooks and slides from the workshop)
+    - [SoDa Workshop Overview and Upcoming Sessions](https://odissei-soda.nl/workshops/) (You can find the LLM data collection workshop here when it is scheduled)
+    - [ODISSEI Newsletter](https://odissei-data.nl/about-odissei/) (Scroll down to bottom and subscribe to stay updated on workshops and resources)
+- [SoDa Blog post: The Best of Both Worlds: Saving Costs and Time When Using OpenAI's API - Combining OpenAI's Batch API and Structured Outputs](https://odissei-soda.nl/tutorials/llm_batch_structured_output/)
+-  [GitHub Repository: Addressing LLM-related Measurement Error in Social Science Research](https://github.com/sodascience/social_science_inferences_with_llms) (Overview of literature and tools for addressing measurement errors in LLM predictions/annotations when you use them in downstream statistical analyses)
