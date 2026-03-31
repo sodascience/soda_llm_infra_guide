@@ -2,7 +2,7 @@
 
 ## What is this?
 
-A chat interface is the most direct way to use a large language model (LLM): you type a prompt and receive a response in a conversational window, similar to tools like ChatGPT.
+A chat interface is the most direct way to use a large language model (LLM): you type a prompt and receive a response in a conversational window, similar to tools like ChatGPT, Claude, or Gemini.
 
 ---
 
@@ -12,6 +12,7 @@ A chat interface is the most direct way to use a large language model (LLM): you
 - Drafting and rewriting text  
 - Quick coding support and debugging hints  
 - Fast exploration of a research topic before formal analysis  
+- Explaining complex concepts in simple language for education or communication purposes
 
 ---
 
@@ -20,13 +21,13 @@ A chat interface is the most direct way to use a large language model (LLM): you
 - When you need strict reproducibility or traceability of outputs  
 - When you must automate repeated tasks at scale  
 - When your workflow requires integration with scripts or datasets  
-- When governance policies restrict data entry into external services (unless using an institutional chat tool; see `../institutional-resources/chat-interface.md`)  
+- When governance policies restrict data entry into external services  
 
 ---
 
 ## How it works (simple explanation)
 
-You provide instructions in natural language. The model generates a response by predicting the most likely continuation of text given your input and prior context.
+You provide instructions in natural language. The model generates a response by predicting a likely continuation of text given your input and prior context.
 
 The interface manages conversation history for you, but typically hides system-level instructions and offers limited control over model parameters, tools, and backend infrastructure.
 
@@ -34,18 +35,18 @@ The interface manages conversation history for you, but typically hides system-l
 
 ## Concrete examples (tools/platforms)
 
-- Public chat assistants (e.g., ChatGPT-like tools)  
-- Institution-provided chat tools (where available)  
+- Public chat assistants (e.g., ChatGPT, Claude, Gemini)  
+- Institution-provided chat tools (see [INSTITUTIONAL RESOURCES: Chat interface](../institutional-resources/chat-interface.md))  
 - Enterprise chat interfaces with governance and access controls  
 
 ---
 
 ## Example workflow (step-by-step)
 
-1. Define your immediate goal (e.g., summarize three papers).  
-2. Write a prompt including context, constraints, and expected output format.  
-3. Iterate with follow-up prompts to refine structure and accuracy.  
-4. Verify key claims against original sources.  
+1. Define your immediate goal (e.g., explain a figure in a research paper).  
+2. Write a prompt including context (e.g., background information and research questions), constraints (e.g., tone), and expected output format (e.g., bullet points).  
+3. Iterate with follow-up prompts to refine structure and accuracy (e.g., ask for more details or a different format).  
+4. Verify key claims against original sources (e.g., academic papers or datasets).  
 5. Save effective prompts for reuse (e.g., in shared notes or templates).  
 
 ---
