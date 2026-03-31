@@ -2,21 +2,23 @@
 
 ## What is this?
 
-LLM dashboards are visual tools for testing prompts, comparing model outputs, and organizing experiments without writing much code.
+LLM dashboards are visual tools for testing prompts, comparing model outputs, and organizing experiments without writing any/much code.
 
 Unlike basic chat interfaces, dashboards are built for structured experimentation.
 
 ## When should you use it?
 
+- You want to quickly prototype and compare a few prompts without coding
 - You want to compare prompts side by side
 - You need quick iteration with light structure
 - You are preparing a research workflow before implementing it in code
-- You want to evaluate multiple models on the same task
+- You want to evaluate multiple models on the same task without setting up API scripts
 
 ## When should you NOT use it?
 
 - When you need full automation integrated into scripts or production systems
 - When strict auditability requires complete programmatic logs and version control
+- When you are conducting a research project that requires strict reproducibility and traceability of outputs
 - When your institution requires deployment inside a tightly controlled environment not supported by the dashboard
 
 ## How it works (simple explanation)
@@ -33,9 +35,9 @@ A dashboard lets you define prompts, variables, and test cases through forms and
 1. Select a research task, such as extracting themes from interview summaries.
 2. Define a base prompt and two to three prompt variants.
 3. Load a small, representative set of test inputs.
-4. Run all prompt variants across one or more models.
+4. Run all prompt variants across one or more models using a dashboard tool.
 5. Compare accuracy, consistency, and formatting quality.
-6. Choose a candidate prompt for API implementation.
+6. Choose a candidate prompt for further API implementation.
 
 ## Pros and cons
 
@@ -44,9 +46,3 @@ A dashboard lets you define prompts, variables, and test cases through forms and
 | Easier experimentation than coding from scratch | Less flexible than full API pipelines |
 | Better comparison workflow than single chat threads | Some tools may have limited governance options |
 | Good transition from exploration to engineering | Can become a dead end if automation needs grow |
-
-## Typical users
-
-- Research engineers prototyping prompts
-- Methodology teams evaluating prompt quality
-- Labs moving from manual chat usage toward reproducible pipelines
