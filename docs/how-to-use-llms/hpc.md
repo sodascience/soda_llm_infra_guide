@@ -55,3 +55,5 @@ You submit jobs to a scheduler, usually as batch scripts. The scheduler places y
 - Research software engineers
 - Computational method teams
 - Projects with strong scaling and throughput requirements
+
+## Learning resources
