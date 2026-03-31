@@ -46,3 +46,7 @@ A dashboard lets you define prompts, variables, and test cases through forms and
 | Easier experimentation than coding from scratch | Less flexible than full API pipelines |
 | Better comparison workflow than single chat threads | Some tools may have limited governance options |
 | Good transition from exploration to engineering | Can become a dead end if automation needs grow |
+
+## Learning resources
+- [ChainForge documentation](https://www.chainforge.ai/docs/)
+- [Langfuse Playground documentation](https://docs.langfuse.com/playground)
