@@ -9,12 +9,15 @@ Remote deployment means running LLM workloads on external compute infrastructure
 - Your local machine is not powerful enough
 - You need shareable environments for a team
 - You need controlled but flexible compute setup
+- You want to avoid the overhead of HPC but need more than local resources
+- You want to test models before scaling to HPC
 
 ## When should you NOT use it?
 
 - When your workload is tiny and can run locally
 - When governance rules prohibit the selected provider
 - When your team cannot maintain remote environments
+- When you need very large models that exceed remote limits
 
 ## How it works (simple explanation)
 
@@ -24,13 +27,19 @@ You provision remote compute, connect securely, install tools, and run inference
 
 ### Virtual machines (VMs)
 
-- AWS EC2
-- Google Cloud Compute Engine
+- [Exoscale](https://www.exoscale.com/) (European cloud provider with VMs)
+- [AWS EC2](https://aws.amazon.com/ec2/) (pay-as-you-go cloud VMs)
+- [Google Cloud Compute Engine](https://cloud.google.com/compute) (pay-as-you-go cloud VMs)
+- [Microsoft Azure Virtual Machines](https://azure.microsoft.com/en-us/services/virtual-machines/) (pay-as-you-go cloud VMs)
+
 
 ### Virtual Research Environments (VREs)
 
-- Google Colab
-- Institution-provided notebook environments
+- [Google Colab](https://colab.research.google.com/) (free tier with limitations)
+- [Microsoft Azure Notebooks](https://notebooks.azure.com/) (free tier with limitations)
+- [JupyterHub](https://jupyter.org/hub) (typically institution-hosted multi-user notebook server)
+- [Binder](https://mybinder.org/) (free tier with limitations)
+- Institution-provided notebook environments (see [INSTITUTIONAL RESOURCES/Remote deployment](../institutional-resources/remote-deployment.md))
 
 ## VM versus VRE: key difference
 
@@ -66,3 +75,5 @@ You provision remote compute, connect securely, install tools, and run inference
 - Research teams with moderate engineering support
 - Projects requiring custom dependencies and controlled compute
 - Groups transitioning from local to scalable environments
+
+## Learning resources
