@@ -4,18 +4,6 @@
 
 Institutional HPC access provides large-scale compute through university clusters and national resources such as Snellius (SURF), typically for workloads that exceed standard remote environments.
 
-## When should you use it?
-
-- You need substantial GPU/CPU resources
-- You need many parallel experiments or large benchmarking runs
-- You need robust storage and job scheduling at scale
-
-## When should you NOT use it?
-
-- For lightweight exploratory prompting
-- When small-scale cloud or local options already meet needs
-- When your project cannot support batch-job workflow practices
-
 ## How it works (simple explanation)
 
 You obtain project access, then submit jobs to shared cluster resources. Scheduling systems allocate resources based on quotas, policies, and queue availability.
@@ -55,9 +43,3 @@ You obtain project access, then submit jobs to shared cluster resources. Schedul
 | Enables national-scale compute and advanced workloads | Onboarding and queue systems require learning |
 | Better fit for large or long-running experiments | Access can depend on quotas or proposal cycles |
 | Strong support ecosystem in Dutch research infrastructure | Not ideal for very rapid ad hoc iteration |
-
-## Typical users
-
-- Advanced computational research teams
-- Projects with explicit scaling requirements
-- Consortia working across institutions in the Netherlands
