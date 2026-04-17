@@ -27,6 +27,8 @@ It is written for mixed audiences:
   - Focuses on methods / usage modes: chat, dashboards, APIs, local deployments, remote deployments, and HPC.
 - **Institutional resources**
   - Focuses on context in the Netherlands: university services, SURF infrastructure, and access models.
+- **Glossary**
+  - A list of terms referred to in this infrastructure guide, with explanations. 
 
 ## Suggested First Question
 
