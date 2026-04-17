@@ -4,18 +4,6 @@
 
 Institutional API access provides programmatic LLM usage through services connected to university or national research infrastructure and governance processes.
 
-## When should you use it?
-
-- You need automation in research workflows
-- You need policy-aligned infrastructure beyond consumer chat tools
-- You need access pathways that fit institutional procurement and security controls
-
-## When should you NOT use it?
-
-- When your task is occasional and manual
-- When a simple institutional chat tool already meets your needs
-- When pilot service constraints do not match production requirements
-
 ## How it works (simple explanation)
 
 You request institutional API access, receive credentials, and connect your scripts or applications to approved LLM endpoints. Usage is typically monitored and governed under institutional terms.
@@ -24,7 +12,7 @@ You request institutional API access, receive credentials, and connect your scri
 
 - [SURF AI Hub / WiLLMa (pilot phase)](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/219086851/AI-Hub+WiLLMa+Pilot+phase)
 
-## Pilot versus production: why it matters
+### Pilot versus production: why it matters
 
 - **Pilot services** may have changing limits, eligibility, and support scope.
 - **Production services** usually provide stronger stability, support guarantees, and clearer long-term planning.
@@ -46,9 +34,3 @@ You request institutional API access, receive credentials, and connect your scri
 | Better alignment with institutional governance | Access process can take longer than public API signup |
 | Supports automation and reproducibility | Pilot services may have changing conditions |
 | Potentially improved trust and policy clarity | Feature set may be narrower than commercial platforms |
-
-## Typical users
-
-- Research teams building repeatable analysis workflows
-- Data stewards and methodologists requiring policy alignment
-- Institutions preparing for broader AI service adoption
