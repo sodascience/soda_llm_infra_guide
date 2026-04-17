@@ -56,36 +56,24 @@ You install a local inference runtime, download model weights, and run prompts d
 | Potentially lower long-term per-call cost | Large models may be impractical |
 
 ## Learning resources
-#### Getting started (quick local setup)
+### Getting started (quick local setup)
 - [Ollama docs](https://ollama.com/docs) — beginner-friendly way to run and manage LLMs locally  
 - [llama.cpp](https://github.com/ggerganov/llama.cpp) — practical guide and examples for running LLMs locally (CPU/GPU, quantization)  
 
----
-
-#### Research workflows (core libraries)
+### Research workflows (core libraries)
 - [Hugging Face Transformers docs](https://huggingface.co/docs/transformers/index) — load models, run inference, build pipelines  
 - [Hugging Face Accelerate](https://github.com/huggingface/accelerate) — manage CPU/GPU and multi-device setups  
-- [Microsoft Guidance](https://github.com/microsoft/guidance) — structured prompting and controlled generation  
+- [Microsoft Guidance](https://github.com/microsoft/guidance) — structured prompting and controlled generation
 
----
-
-#### Serving & scaling (API-style deployment)
+### Serving & scaling (API-style deployment)
 - [vLLM docs](https://docs.vllm.ai/en/stable/) — high-performance inference engine for scalable deployment  
 - [Text Generation Inference (TGI)](https://huggingface.co/docs/text-generation-inference/index) — production-ready LLM serving  
 - [Open WebUI](https://github.com/open-webui/open-webui) — self-hosted chat interface for local models  
 
----
-
-#### Fine-tuning (advanced)
+### Fine-tuning (advanced)
 - [PEFT (Parameter-Efficient Fine-Tuning)](https://huggingface.co/docs/peft/index) — efficient fine-tuning methods like LoRA  
 - [QLoRA](https://github.com/artidoro/qlora) — fine-tune large models on limited hardware  
 
----
-
-#### Learning & fundamentals
+### Learning & fundamentals
 - [DeepLearning.AI: Open-Source Models with Hugging Face](https://www.deeplearning.ai/short-courses/open-source-models-hugging-face/) — structured course on using open models locally  
 - [llm.c](https://github.com/karpathy/llm.c) — minimal implementation for understanding LLM internals  
-
-
-
-
