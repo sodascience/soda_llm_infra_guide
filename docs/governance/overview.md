@@ -37,23 +37,6 @@ This section helps you:
 - choose appropriate infrastructure (chat, API, VM, HPC)  
 - find relevant policy and guidance documents  
 
----
-
-## How to use this section
-
-A simple way to approach LLM use in research:
-
-1. **Start with your data**  
-   - Is it public, internal, or sensitive?
-
-2. **Check institutional rules**  
-   - Are there restrictions or approved tools?
-
-3. **Choose the right infrastructure**  
-   - Public tools, institutional tools, or secure environments?
-
-4. **When in doubt, be conservative**  
-   - Use more controlled environments or ask for guidance  
 
 ---
 
@@ -67,3 +50,19 @@ Together, they provide a complete view of:
 - what you *can do*  
 - where you *can do it*  
 - what you *should or should not do*  
+
+---
+
+## A simple way to approach LLM use in research
+
+1. **Start with your data**  
+   - Is it public, internal, or sensitive?
+
+2. **Check institutional rules**  
+   - Are there restrictions or approved tools?
+
+3. **Choose the right infrastructure**  
+   - Public tools, institutional tools, or secure environments?
+
+4. **When in doubt, be conservative**  
+   - Use more controlled environments or ask for guidance
