@@ -33,5 +33,5 @@ nav:
       - APIs: institutional-resources/apis.md
       - Remote deployment: institutional-resources/remote-deployment.md
       - HPC: institutional-resources/hpc.md
-  - Glossary:
-      - Glossary: glossary/glossary.md
+  - Governance:
+      - Governance: governance/governance.md
