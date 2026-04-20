@@ -4,6 +4,8 @@
 
 Remote deployment means running LLM workloads on external compute infrastructure instead of your local machine. Common options include virtual machines (VMs) and Virtual Research Environments (VREs).
 
+---
+
 ## When should you use it?
 
 - Your local machine is not powerful enough  
@@ -13,12 +15,16 @@ Remote deployment means running LLM workloads on external compute infrastructure
 - You want to test models before scaling to HPC  
 - You want to transition from local prototyping to more scalable environments  
 
+---
+
 ## When should you NOT use it?
 
 - When your workload is small and can run locally  
 - When governance rules prohibit the selected provider  
 - When your team cannot maintain remote environments  
 - When you need very large models requiring multi-GPU or HPC-scale infrastructure  
+
+---
 
 ## How it works (simple explanation)
 
@@ -27,6 +33,8 @@ You provision remote compute, connect securely (e.g., via SSH or browser), insta
 Depending on the setup:
 - VMs are typically **persistent** (you manage them over time)  
 - VREs are often **ephemeral or semi-managed** (sessions may reset or be preconfigured)  
+
+---
 
 ## Concrete examples (tools/platforms)
 
@@ -45,10 +53,12 @@ Depending on the setup:
 - [Binder](https://mybinder.org/) — temporary environments (no GPU, limited for LLM use)  
 - Institution-provided notebook environments (see [INSTITUTIONAL RESOURCES/Remote deployment](../institutional-resources/remote-deployment.md))  
 
-## VM versus VRE: key difference
+### VM versus VRE: key difference
 
 - **VM**: full control over the machine, operating system, and installed services. More flexibility, but more responsibility.  
 - **VRE**: managed research workspace with preconfigured tools and interfaces. Less control, faster onboarding.  
+
+---
 
 ## Example workflow (step-by-step)
 
@@ -60,6 +70,8 @@ Depending on the setup:
 6. Run scripts or notebooks for inference or experimentation.  
 7. Monitor usage, logs, and costs.  
 
+---
+
 ## Typical SSH workflow for VMs
 
 1. Generate or load your SSH key pair.  
@@ -68,6 +80,8 @@ Depending on the setup:
 4. Use tools like `tmux` or `screen` for long-running jobs.  
 5. Keep scripts version-controlled for reproducibility.  
 
+---
+
 ## Pros and cons
 
 | Pros | Cons |
@@ -75,6 +89,8 @@ Depending on the setup:
 | More compute flexibility than local setups | Ongoing cost and operational overhead |
 | Suitable for team collaboration | Requires setup of security and access controls |
 | Good balance between control and usability | Risk of configuration drift without automation |
+
+---
 
 ## Learning resources
 - [SSH tutorial by DigitalOcean](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys) — practical SSH basics  

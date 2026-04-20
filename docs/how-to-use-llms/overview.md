@@ -11,6 +11,8 @@ The practical spectrum is:
 
 Moving right usually increases control and complexity.
 
+---
+
 ## Comparison Across Usage Modes
 
 | Mode | Control | Technical difficulty | Typical speed to start | Best for |
@@ -22,6 +24,8 @@ Moving right usually increases control and complexity.
 | Remote deployment | High | Medium to high | Days | Team workflows, controlled environments, larger models |
 | HPC | Very high | High | Days to weeks | Large-scale experiments, parallel jobs, fine-tuning |
 
+---
+
 ## How To Interpret The Spectrum
 
 - If your goal is **speed and ease**, start with chat or dashboard tools.
@@ -29,11 +33,15 @@ Moving right usually increases control and complexity.
 - If your goal is **data control or model control**, local and remote deployments become relevant.
 - If your goal is **scale**, HPC is typically required.
 
+---
+
 ## Practical Decision Rules
 
 1. Use the simplest option that meets your governance and data requirements.
 2. Move to a more advanced option only when your current approach blocks research quality or scale.
 3. Keep a migration path in mind: chat prompts can become dashboard experiments, then API workflows.
+
+---
 
 ## Typical Progression In Real Projects
 

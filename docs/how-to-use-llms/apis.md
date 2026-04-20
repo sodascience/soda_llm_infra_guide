@@ -4,6 +4,8 @@
 
 An API (Application Programming Interface) lets your script or application talk directly to an LLM service. Instead of manually typing prompts in a chat window, you write code (e.g., Python, R) to send requests and receive responses. 
 
+---
+
 ## When should you use it?
 
 - You need repeatable workflows
@@ -12,15 +14,21 @@ An API (Application Programming Interface) lets your script or application talk 
 - You want better logging, evaluation, and versioning
 - You need control over input/output formats and parameters
 
+---
+
 ## When should you NOT use it?
 
 - When your use case is occasional and exploratory only
 - When your team has no capacity for basic scripting support
 - When policy constraints prevent use of external API providers
 
+---
+
 ## How it works (simple explanation)
 
 Your code sends structured input (prompt, parameters, optional context) to an API endpoint. The API endpoint is, in short, a URL that accepts such input and returns model output in a machine-readable format. This enables automation and consistent processing logic.
+
+---
 
 ## Concrete examples (tools/platforms)
 
@@ -32,6 +40,8 @@ Your code sends structured input (prompt, parameters, optional context) to an AP
     - [LangChain](https://www.langchain.com/) in Python for pipeline orchestration
     - [ellmer](https://ellmer.tidyverse.org/) in R for conversational and prompt workflows in data science contexts
 
+---
+
 ## Example workflow (step-by-step)
 
 1. Define a single research task, such as coding open-ended survey responses.
@@ -41,6 +51,8 @@ Your code sends structured input (prompt, parameters, optional context) to an AP
 5. Store outputs with metadata (model, prompt version, timestamp).
 6. Evaluate quality on a validation subset and revise prompt/template.
 
+---
+
 ## Pros and cons
 
 | Pros | Cons |
@@ -48,6 +60,8 @@ Your code sends structured input (prompt, parameters, optional context) to an AP
 | Enables automation and scale | Requires scripting and API key management |
 | Supports reproducible pipelines | Cost management becomes important at volume |
 | Easier integration with existing tools | Governance checks may be more complex |
+
+---
 
 ## Learning resources
 - [Workflow/Tutorial Paper: A Methodological Guide on Using Large Language Models for Text Annotation in the Social Sciences and Humanities with Python and R](https://arxiv.org/abs/2604.09638) (A SoDa-led preprint paper with code examples and best practices for LLM annotation workflows)

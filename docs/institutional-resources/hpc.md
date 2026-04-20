@@ -1,7 +1,5 @@
 # HPC (institutional)
 
----
-
 ## What is this?
 
 Institutional HPC access provides large-scale compute through university clusters and national resources such as Snellius (SURF), typically for workloads that exceed standard remote environments.

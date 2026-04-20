@@ -8,6 +8,8 @@ It is written for mixed audiences:
 - Researchers with some experience who want to scale up responsibly
 - Researchers who must balance speed, privacy, and governance with institutional infrastructure options
 
+---
+
 ## What You Will Find Here
 
 - A clear progression of LLM usage modes, from low effort to high control
@@ -15,25 +17,24 @@ It is written for mixed audiences:
 - Decision support on governance, GDPR, and access pathways
 - Concrete examples and step-by-step workflows for each mode
 
+---
+
 ## How To Read This Guide
 
 1. Start with the section overviews.
 2. Choose a usage mode that matches your project needs.
 3. Use the detailed pages to implement responsibly and efficiently.
 
+---
+
 ## Sections
 
-- **How to use LLMs in research**
-  - Focuses on methods / usage modes: chat, dashboards, APIs, local deployments, remote deployments, and HPC.
-- **Institutional resources**
-  - Focuses on context in the Netherlands: university services, SURF infrastructure, and access models.
-- **Glossary**
-  - A list of terms referred to in this infrastructure guide, with explanations. 
+### How to use LLMs in research
+Focuses on methods / usage modes: chat, dashboards, APIs, local deployments, remote deployments, and HPC.
 
-## Suggested First Question
 
-Before selecting any infrastructure, answer this:
+### Institutional resources
+Focuses on context in the Netherlands: university services, SURF infrastructure, and access models.
 
-> Do I need convenience, control, or scale?
-
-Your answer usually determines the best starting point.
+### Glossary
+A list of terms referred to in this infrastructure guide, with explanations. 

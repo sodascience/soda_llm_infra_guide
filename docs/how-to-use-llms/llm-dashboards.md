@@ -6,6 +6,8 @@ LLM dashboards are visual tools for testing prompts, comparing model outputs, an
 
 Unlike basic chat interfaces, dashboards are built for structured experimentation.
 
+---
+
 ## When should you use it?
 
 - You want to quickly prototype and compare a few prompts without coding
@@ -14,6 +16,8 @@ Unlike basic chat interfaces, dashboards are built for structured experimentatio
 - You are preparing a research workflow before implementing it in code
 - You want to evaluate multiple models on the same task without setting up API scripts
 
+---
+
 ## When should you NOT use it?
 
 - When you need full automation integrated into scripts or production systems
@@ -21,14 +25,20 @@ Unlike basic chat interfaces, dashboards are built for structured experimentatio
 - When you are conducting a research project that requires strict reproducibility and traceability of outputs
 - When your institution requires deployment inside a tightly controlled environment not supported by the dashboard
 
+---
+
 ## How it works (simple explanation)
 
 A dashboard lets you define prompts, variables, and test cases through forms and tables. You run experiments across one or more models and inspect outputs in a comparative view. This creates a bridge between ad hoc chat and API-based engineering.
+
+---
 
 ## Concrete examples (tools/platforms)
 
 - [ChainForge](https://www.chainforge.ai): visual prompt and model comparison workflows
 - [Langfuse Playground](https://langfuse.com/?tab=playground): prompt testing with observability features
+
+---
 
 ## Example workflow (step-by-step)
 
@@ -39,6 +49,8 @@ A dashboard lets you define prompts, variables, and test cases through forms and
 5. Compare accuracy, consistency, and formatting quality.
 6. Choose a candidate prompt for further API implementation.
 
+---
+
 ## Pros and cons
 
 | Pros | Cons |
@@ -46,6 +58,8 @@ A dashboard lets you define prompts, variables, and test cases through forms and
 | Easier experimentation than coding from scratch | Less flexible than full API pipelines |
 | Better comparison workflow than single chat threads | Some tools may have limited governance options |
 | Good transition from exploration to engineering | Can become a dead end if automation needs grow |
+
+---
 
 ## Learning resources
 - [ChainForge documentation](https://www.chainforge.ai/docs/)

@@ -4,6 +4,8 @@
 
 Local deployment means running an LLM on your own machine or on institution-managed hardware under your direct control, instead of relying on an externally hosted API.
 
+---
+
 ## When should you use it?
 
 - You need stronger control over data locality (e.g., sensitive data that cannot leave your machine)
@@ -13,6 +15,8 @@ Local deployment means running an LLM on your own machine or on institution-mana
 - You have access to local hardware that can support the model size you need
 - You want to avoid ongoing costs of remote compute for frequent inference
 
+---
+
 ## When should you NOT use it?
 
 - When you need very large models that exceed local hardware limits
@@ -20,9 +24,13 @@ Local deployment means running an LLM on your own machine or on institution-mana
 - When you need to collaborate with a team that cannot access the same local environment
 - When you want to quickly iterate without the overhead of local setup and maintenance
 
+---
+
 ## How it works (simple explanation)
 
 You install a local inference runtime, download model weights, and run prompts directly on your machine. Performance (latency, throughput) depends heavily on CPU/GPU memory and model size.
+
+---
 
 ## Concrete examples (tools/platforms)
 - User-friendly local LLM apps
@@ -38,6 +46,8 @@ You install a local inference runtime, download model weights, and run prompts d
 - Programming frameworks (research workflows)
     - [Hugging Face Transformers](https://huggingface.co/docs/transformers/index)： Python library for loading and running LLMs programmatically  
 
+---
+
 ## Example workflow (step-by-step)
 
 1. Select a model size your hardware can support.
@@ -47,6 +57,8 @@ You install a local inference runtime, download model weights, and run prompts d
 5. Tune runtime settings (context length, precision, batch size).
 6. Validate output quality before wider use.
 
+---
+
 ## Pros and cons
 
 | Pros | Cons |
@@ -54,6 +66,8 @@ You install a local inference runtime, download model weights, and run prompts d
 | Strong data control and local execution | Limited by hardware memory and compute |
 | Useful for offline experimentation | Setup and maintenance burden |
 | Potentially lower long-term per-call cost | Large models may be impractical |
+
+---
 
 ## Learning resources
 ### Getting started (quick local setup)

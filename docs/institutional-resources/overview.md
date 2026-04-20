@@ -5,6 +5,8 @@ In the Netherlands, researchers can access LLM infrastructure at multiple levels
 - **University level**: institution-provided tools, local policy support, and campus IT pathways.
 - **National level**: SURF services and national HPC resources such as Snellius.
 
+---
+
 ## Why this matters
 
 Choosing an institutional route is not only a technical decision. It also affects:
@@ -13,6 +15,8 @@ Choosing an institutional route is not only a technical decision. It also affect
 - GDPR compliance and data handling rules
 - Procurement and support pathways
 - Access speed and long-term sustainability
+
+---
 
 ## Governance and GDPR
 
@@ -25,6 +29,8 @@ Institutional services often provide clearer frameworks for:
 
 For projects with personal or sensitive data, governance maturity can be as important as model quality.
 
+---
+
 ## Access pathways
 
 Access usually follows institutional channels:
@@ -33,6 +39,8 @@ Access usually follows institutional channels:
 2. Select an approved service (chat, API, VM/VRE, or HPC).
 3. Request access through institutional identity and project processes.
 4. Align quotas, budgets, and support expectations before scaling.
+
+---
 
 ## How to choose
 

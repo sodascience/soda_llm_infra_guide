@@ -6,6 +6,8 @@ HPC (High-Performance Computing) refers to shared computing clusters designed to
 
 These systems typically consist of many interconnected nodes (CPUs/GPUs) managed by a scheduler, allowing users to run jobs in parallel at scale.
 
+---
+
 ## When should you use it?
 
 - You need to run large batches of LLM experiments  
@@ -14,12 +16,16 @@ These systems typically consist of many interconnected nodes (CPUs/GPUs) managed
 - You are fine-tuning models or running large-scale benchmarking  
 - You need reproducible, large-scale pipelines  
 
+---
+
 ## When should you NOT use it?
 
 - For quick exploratory prompting  
 - For small workloads that run well locally or on a VM  
 - When your workflow requires real-time interaction  
 - When your team cannot maintain job scripts and queue-based workflows  
+
+---
 
 ## How it works (simple explanation)
 
@@ -29,6 +35,8 @@ You submit jobs to a scheduler (commonly Slurm) using batch scripts. The schedul
 - **Scheduler**: Software (e.g., Slurm) that manages job submission, scheduling, and execution  
 - **Queue**: A waiting line where jobs are held until resources become available; priority may depend on policies or quotas  
 - **Resources**: Requested compute such as CPUs, GPUs, memory, runtime, and number of nodes  
+
+---
 
 ## Concrete examples (tools/platforms)
 
@@ -46,6 +54,8 @@ See [INSTITUTIONAL RESOURCES/HPC](../institutional-resources/hpc.md) for more.
 - [Oracle Cloud Infrastructure (OCI) HPC](https://www.oracle.com/cloud/hpc/) — HPC with low-latency networking  
 - [OVHcloud HPC](https://www.ovhcloud.com/en/bare-metal/uc-high-performance-computing/) — European HPC and GPU clusters (GDPR-friendly option)  
 
+---
+
 ## Example workflow (step-by-step)
 
 1. Prepare a reproducible environment (modules, container, or environment file).  
@@ -55,6 +65,8 @@ See [INSTITUTIONAL RESOURCES/HPC](../institutional-resources/hpc.md) for more.
 5. Validate outputs and iterate with adjusted parameters.  
 6. Archive results, logs, and configuration for reproducibility.  
 
+---
+
 ## Pros and cons
 
 | Pros | Cons |
@@ -63,6 +75,8 @@ See [INSTITUTIONAL RESOURCES/HPC](../institutional-resources/hpc.md) for more.
 | Access to high-end compute and storage | Queue times can delay iteration |
 | Strong fit for reproducible batch pipelines | Requires planning and resource estimation |
 | Enables multi-GPU and distributed workloads | Less suitable for interactive exploration |
+
+---
 
 ## Learning resources
 
