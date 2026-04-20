@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Remote deployment - Guide to LLM Computing Infrastructure in the Netherlands</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Practical guidance for researchers on using LLMs and institutional infrastructure in the Netherlands.">
+<meta name="generator" content="mkdocs-1.6.1, mkdocs-gitbook-1.0.7">
+
+<link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta rel="next" href="" />
+<link href="../../css/style.min.css" rel="stylesheet">
+<link href="../../stylesheets/search-fix.css" rel="stylesheet"> 
+</head>
+
+<body>
+<div class="book">
+<div class="book-summary">
+
+<nav role="navigation">
+<ul class="summary">
+<li>
+<a href="../.." target="_blank" class="custom-link">Guide to LLM Computing Infrastructure in the Netherlands</a>
+</li>
+<li class="divider"></li>
+<li class="chapter" data-path="">
+<a href="../..">Home</a>
+<li class="header">How to use LLMs in research</li>
+
+<li>
+<a href="../../how-to-use-llms/overview/" class="">Overview</a>
+</li>
+
+<li>
+<a href="../../how-to-use-llms/chat-interface/" class="">Chat interface</a>
+</li>
+
+<li>
+<a href="../../how-to-use-llms/llm-dashboards/" class="">LLM dashboards</a>
+</li>
+
+<li>
+<a href="../../how-to-use-llms/apis/" class="">APIs</a>
+</li>
+
+<li>
+<a href="../../how-to-use-llms/local-deployment/" class="">Local deployment</a>
+</li>
+
+<li>
+<a href="../../how-to-use-llms/remote-deployment/" class="">Remote deployment</a>
+</li>
+
+<li>
+<a href="../../how-to-use-llms/hpc/" class="">HPC</a>
+</li>
+
+<li class="header">Institutional resources</li>
+
+<li>
+<a href="../overview/" class="">Overview</a>
+</li>
+
+<li>
+<a href="../chat-interface/" class="">Chat interface</a>
+</li>
+
+<li>
+<a href="../apis/" class="">APIs</a>
+</li>
+
+<li>
+<a href="./" class="active">Remote deployment</a>
+</li>
+
+<li>
+<a href="../hpc/" class="">HPC</a>
+</li>
+
+<li class="header">Governance</li>
+
+<li>
+<a href="../../governance/governance/" class="">Governance</a>
+</li>
+
+<li class="divider"></li>
+
+
+
+<li><a href="http://www.mkdocs.org">
+Published with MkDocs
+</a></li>
+
+<li><a href="https://github.com/GitbookIO/theme-default">
+Theme by GitBook
+</a></li>
+</ul>
+
+</nav>
+
+</div> <!-- end of book-summary -->
+
+<div class="book-body">
+<div class="body-inner">
+<div class="book-header" role="navigation">
+
+<!-- Title -->
+<h1>
+<i class="fa fa-circle-o-notch fa-spin"></i>
+<a href="." ></a>
+</h1>
+
+</div> <!-- end of book-header -->
+
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="page-inner">
+
+<section class="normal markdown-section">
+
+
+
+<h1 id="remote-deployment-institutional">Remote deployment (institutional)</h1>
+<h2 id="what-is-this">What is this?</h2>
+<p>Institutional remote deployment gives researchers access to VMs or VREs through university or national research infrastructure channels, rather than unmanaged personal cloud setups.</p>
+<hr />
+<h2 id="how-it-works-simple-explanation">How it works (simple explanation)</h2>
+<p>You request access to remote compute resources through your institution or SURF-linked services. After approval, you deploy code and data to the environment and run workflows under governed conditions.</p>
+<hr />
+<h2 id="concrete-examples-toolsplatforms">Concrete examples (tools/platforms)</h2>
+<ul>
+<li>
+<p><a href="https://www.surf.nl/en/services/compute/surf-research-cloud">SURF Research Cloud</a>: National platform for creating and managing VMs and VREs with pre-configured environments and reproducible research workflows.  </p>
+<ul>
+<li>Apply for access through <a href="https://www.surf.nl/en/access-to-compute-services">NWO computing calls</a>  </li>
+<li>Direct access: available only through <a href="https://www.surf.nl/en/access-to-computing-and-storage-capacity-via-direct-contract">certain universities</a>  </li>
+</ul>
+</li>
+<li>
+<p><strong>University-supported VMs and VREs</strong> (including both university-specific solutions and SURF Research Cloud-based solutions):  </p>
+<ul>
+<li>
+<p><a href="https://www.uu.nl/en/research/research-data-management/tools/software-and-computing/virtual-research-environments">Utrecht University</a>: <a href="https://utrechtuniversity.github.io/vre-docs/docs/workspace-catalogue.html">Workspace catalogue</a>  </p>
+</li>
+<li>
+<p><a href="https://www.uva.nl/shared-content/uva/en/news/news/2023/03/virtual-research-environment-uva-wide-available.html">University of Amsterdam</a>: Access via <a href="https://rsp.uva.nl/">Research Support Portal</a> (login required)  </p>
+</li>
+<li>
+<p><a href="https://rdm.vu.nl/topics/researchcloud.html">Vrije Universiteit Amsterdam</a>  </p>
+</li>
+<li>
+<p><a href="https://www.rug.nl/society-business/center-for-information-technology/research/services/virtual-research-workspace">University of Groningen</a>  </p>
+</li>
+<li>
+<p><a href="https://www.utwente.nl/en/service-portal/research-support/it-facilities-for-research-labs/virtual-research-environment-vre">University of Twente</a>  </p>
+</li>
+<li>
+<p><a href="https://tu-delft-ict-innovation.github.io/Cloud4Research/">TU Delft Cloud4Research</a>  </p>
+</li>
+<li>
+<p>Eindhoven University of Technology  </p>
+<ul>
+<li><a href="https://supercomputing.tue.nl/documentation/departments/MCS/virtual_machines/">Supercomputing Center: M&amp;CS Virtual Machines</a>  </li>
+<li><a href="https://openpar.pages.tue.nl/solution-searcher/category-compute.html">PAR Solution Searcher: Compute</a>  </li>
+</ul>
+</li>
+<li>
+<p><a href="https://geoscripting-wur.github.io/Intro2Linux/surfsara_tutorial.html">Wageningen University Geoscripting Guide</a>  </p>
+</li>
+<li>
+<p><a href="https://library.maastrichtuniversity.nl/research/research-computing-support/data-science-research-infrastructure/">Maastricht University DSRI</a>  </p>
+</li>
+<li>
+<p><a href="https://www.ru.nl/en/research/research-facilities/high-performance-computing-hpc">Radboud University</a>  </p>
+</li>
+<li>
+<p><a href="https://www.universiteitleiden.nl/en/science/computer-science/about-us/our-facilities">Leiden University</a>: Public overview describing Leiden’s VRE  </p>
+</li>
+<li>
+<p><a href="https://www.tilburgsciencehub.com/topics/automation/replicability/cloud-computing/getting-started-research-cloud/">Tilburg University</a>  </p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/92668435/Working+with+sensitive+data">SURF SANE (Secure ANalysis Environment)</a>: Secure VMs/VREs for sensitive data analysis (e.g., CBS microdata), with strict access controls.</p>
+</li>
+</ul>
+
+
+</section>
+
+</div> <!-- end of page-inner -->
+</div> <!-- end of page-wrapper -->
+
+</div> <!-- end of body-inner -->
+
+</div> <!-- end of book-body -->
+<script src="../../js/main.js"></script>
+<script src="../../js/gitbook.min.js"></script>
+<script src="../../js/theme.min.js"></script>
+</body>
+</html>

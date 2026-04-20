@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>LLM dashboards - Guide to LLM Computing Infrastructure in the Netherlands</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Practical guidance for researchers on using LLMs and institutional infrastructure in the Netherlands.">
+<meta name="generator" content="mkdocs-1.6.1, mkdocs-gitbook-1.0.7">
+
+<link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta rel="next" href="" />
+<link href="../../css/style.min.css" rel="stylesheet">
+<link href="../../stylesheets/search-fix.css" rel="stylesheet"> 
+</head>
+
+<body>
+<div class="book">
+<div class="book-summary">
+
+<nav role="navigation">
+<ul class="summary">
+<li>
+<a href="../.." target="_blank" class="custom-link">Guide to LLM Computing Infrastructure in the Netherlands</a>
+</li>
+<li class="divider"></li>
+<li class="chapter" data-path="">
+<a href="../..">Home</a>
+<li class="header">How to use LLMs in research</li>
+
+<li>
+<a href="../overview/" class="">Overview</a>
+</li>
+
+<li>
+<a href="../chat-interface/" class="">Chat interface</a>
+</li>
+
+<li>
+<a href="./" class="active">LLM dashboards</a>
+</li>
+
+<li>
+<a href="../apis/" class="">APIs</a>
+</li>
+
+<li>
+<a href="../local-deployment/" class="">Local deployment</a>
+</li>
+
+<li>
+<a href="../remote-deployment/" class="">Remote deployment</a>
+</li>
+
+<li>
+<a href="../hpc/" class="">HPC</a>
+</li>
+
+<li class="header">Institutional resources</li>
+
+<li>
+<a href="../../institutional-resources/overview/" class="">Overview</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/chat-interface/" class="">Chat interface</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/apis/" class="">APIs</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/remote-deployment/" class="">Remote deployment</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/hpc/" class="">HPC</a>
+</li>
+
+<li class="header">Governance</li>
+
+<li>
+<a href="../../governance/governance/" class="">Governance</a>
+</li>
+
+<li class="divider"></li>
+
+
+
+<li><a href="http://www.mkdocs.org">
+Published with MkDocs
+</a></li>
+
+<li><a href="https://github.com/GitbookIO/theme-default">
+Theme by GitBook
+</a></li>
+</ul>
+
+</nav>
+
+</div> <!-- end of book-summary -->
+
+<div class="book-body">
+<div class="body-inner">
+<div class="book-header" role="navigation">
+
+<!-- Title -->
+<h1>
+<i class="fa fa-circle-o-notch fa-spin"></i>
+<a href="." ></a>
+</h1>
+
+</div> <!-- end of book-header -->
+
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="page-inner">
+
+<section class="normal markdown-section">
+
+
+
+<h1 id="llm-dashboards">LLM dashboards</h1>
+<h2 id="what-is-this">What is this?</h2>
+<p>LLM dashboards are visual tools for testing prompts, comparing model outputs, and organizing experiments without writing any/much code.</p>
+<p>Unlike basic chat interfaces, dashboards are built for structured experimentation.</p>
+<hr />
+<h2 id="when-should-you-use-it">When should you use it?</h2>
+<ul>
+<li>You want to quickly prototype and compare a few prompts without coding</li>
+<li>You want to compare prompts side by side</li>
+<li>You need quick iteration with light structure</li>
+<li>You are preparing a research workflow before implementing it in code</li>
+<li>You want to evaluate multiple models on the same task without setting up API scripts</li>
+</ul>
+<hr />
+<h2 id="when-should-you-not-use-it">When should you NOT use it?</h2>
+<ul>
+<li>When you need full automation integrated into scripts or production systems</li>
+<li>When strict auditability requires complete programmatic logs and version control</li>
+<li>When you are conducting a research project that requires strict reproducibility and traceability of outputs</li>
+<li>When your institution requires deployment inside a tightly controlled environment not supported by the dashboard</li>
+</ul>
+<hr />
+<h2 id="how-it-works-simple-explanation">How it works (simple explanation)</h2>
+<p>A dashboard lets you define prompts, variables, and test cases through forms and tables. You run experiments across one or more models and inspect outputs in a comparative view. This creates a bridge between ad hoc chat and API-based engineering.</p>
+<hr />
+<h2 id="concrete-examples-toolsplatforms">Concrete examples (tools/platforms)</h2>
+<ul>
+<li><a href="https://www.chainforge.ai">ChainForge</a>: visual prompt and model comparison workflows</li>
+<li><a href="https://langfuse.com/?tab=playground">Langfuse Playground</a>: prompt testing with observability features</li>
+</ul>
+<hr />
+<h2 id="example-workflow-step-by-step">Example workflow (step-by-step)</h2>
+<ol>
+<li>Select a research task, such as extracting themes from interview summaries.</li>
+<li>Define a base prompt and two to three prompt variants.</li>
+<li>Load a small, representative set of test inputs.</li>
+<li>Run all prompt variants across one or more models using a dashboard tool.</li>
+<li>Compare accuracy, consistency, and formatting quality.</li>
+<li>Choose a candidate prompt for further API implementation.</li>
+</ol>
+<hr />
+<h2 id="pros-and-cons">Pros and cons</h2>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Easier experimentation than coding from scratch</td>
+<td>Less flexible than full API pipelines</td>
+</tr>
+<tr>
+<td>Better comparison workflow than single chat threads</td>
+<td>Some tools may have limited governance options</td>
+</tr>
+<tr>
+<td>Good transition from exploration to engineering</td>
+<td>Can become a dead end if automation needs grow</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="learning-resources">Learning resources</h2>
+<ul>
+<li><a href="https://www.chainforge.ai/docs/">ChainForge documentation</a></li>
+<li><a href="https://docs.langfuse.com/playground">Langfuse Playground documentation</a></li>
+</ul>
+
+
+</section>
+
+</div> <!-- end of page-inner -->
+</div> <!-- end of page-wrapper -->
+
+</div> <!-- end of body-inner -->
+
+</div> <!-- end of book-body -->
+<script src="../../js/main.js"></script>
+<script src="../../js/gitbook.min.js"></script>
+<script src="../../js/theme.min.js"></script>
+</body>
+</html>

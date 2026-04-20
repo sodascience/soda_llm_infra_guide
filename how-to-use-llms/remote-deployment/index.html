@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Remote deployment - Guide to LLM Computing Infrastructure in the Netherlands</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Practical guidance for researchers on using LLMs and institutional infrastructure in the Netherlands.">
+<meta name="generator" content="mkdocs-1.6.1, mkdocs-gitbook-1.0.7">
+
+<link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta rel="next" href="" />
+<link href="../../css/style.min.css" rel="stylesheet">
+<link href="../../stylesheets/search-fix.css" rel="stylesheet"> 
+</head>
+
+<body>
+<div class="book">
+<div class="book-summary">
+
+<nav role="navigation">
+<ul class="summary">
+<li>
+<a href="../.." target="_blank" class="custom-link">Guide to LLM Computing Infrastructure in the Netherlands</a>
+</li>
+<li class="divider"></li>
+<li class="chapter" data-path="">
+<a href="../..">Home</a>
+<li class="header">How to use LLMs in research</li>
+
+<li>
+<a href="../overview/" class="">Overview</a>
+</li>
+
+<li>
+<a href="../chat-interface/" class="">Chat interface</a>
+</li>
+
+<li>
+<a href="../llm-dashboards/" class="">LLM dashboards</a>
+</li>
+
+<li>
+<a href="../apis/" class="">APIs</a>
+</li>
+
+<li>
+<a href="../local-deployment/" class="">Local deployment</a>
+</li>
+
+<li>
+<a href="./" class="active">Remote deployment</a>
+</li>
+
+<li>
+<a href="../hpc/" class="">HPC</a>
+</li>
+
+<li class="header">Institutional resources</li>
+
+<li>
+<a href="../../institutional-resources/overview/" class="">Overview</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/chat-interface/" class="">Chat interface</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/apis/" class="">APIs</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/remote-deployment/" class="">Remote deployment</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/hpc/" class="">HPC</a>
+</li>
+
+<li class="header">Governance</li>
+
+<li>
+<a href="../../governance/governance/" class="">Governance</a>
+</li>
+
+<li class="divider"></li>
+
+
+
+<li><a href="http://www.mkdocs.org">
+Published with MkDocs
+</a></li>
+
+<li><a href="https://github.com/GitbookIO/theme-default">
+Theme by GitBook
+</a></li>
+</ul>
+
+</nav>
+
+</div> <!-- end of book-summary -->
+
+<div class="book-body">
+<div class="body-inner">
+<div class="book-header" role="navigation">
+
+<!-- Title -->
+<h1>
+<i class="fa fa-circle-o-notch fa-spin"></i>
+<a href="." ></a>
+</h1>
+
+</div> <!-- end of book-header -->
+
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="page-inner">
+
+<section class="normal markdown-section">
+
+
+
+<h1 id="remote-deployment">Remote deployment</h1>
+<h2 id="what-is-this">What is this?</h2>
+<p>Remote deployment means running LLM workloads on external compute infrastructure instead of your local machine. Common options include virtual machines (VMs) and Virtual Research Environments (VREs).</p>
+<hr />
+<h2 id="when-should-you-use-it">When should you use it?</h2>
+<ul>
+<li>Your local machine is not powerful enough  </li>
+<li>You need shareable environments for a team  </li>
+<li>You need a controlled but flexible compute setup  </li>
+<li>You want to avoid the overhead of HPC but need more than local resources  </li>
+<li>You want to test models before scaling to HPC  </li>
+<li>You want to transition from local prototyping to more scalable environments  </li>
+</ul>
+<hr />
+<h2 id="when-should-you-not-use-it">When should you NOT use it?</h2>
+<ul>
+<li>When your workload is small and can run locally  </li>
+<li>When governance rules prohibit the selected provider  </li>
+<li>When your team cannot maintain remote environments  </li>
+<li>When you need very large models requiring multi-GPU or HPC-scale infrastructure  </li>
+</ul>
+<hr />
+<h2 id="how-it-works-simple-explanation">How it works (simple explanation)</h2>
+<p>You provision remote compute, connect securely (e.g., via SSH or browser), install the required tools, and run inference or fine-tuning tasks there. Data and compute remain within the remote environment.</p>
+<p>Depending on the setup:
+- VMs are typically <strong>persistent</strong> (you manage them over time)<br />
+- VREs are often <strong>ephemeral or semi-managed</strong> (sessions may reset or be preconfigured)  </p>
+<hr />
+<h2 id="concrete-examples-toolsplatforms">Concrete examples (tools/platforms)</h2>
+<h3 id="virtual-machines-vms">Virtual machines (VMs)</h3>
+<ul>
+<li><a href="https://www.exoscale.com/">Exoscale</a>: European cloud provider with VM instances  </li>
+<li><a href="https://aws.amazon.com/ec2/">AWS EC2</a>: on-demand cloud virtual machines  </li>
+<li><a href="https://cloud.google.com/compute">Google Cloud Compute Engine</a>: scalable VM infrastructure  </li>
+<li><a href="https://azure.microsoft.com/en-us/services/virtual-machines/">Microsoft Azure Virtual Machines</a>: enterprise cloud VM platform  </li>
+</ul>
+<h3 id="virtual-research-environments-vres">Virtual Research Environments (VREs)</h3>
+<ul>
+<li><a href="https://colab.research.google.com/">Google Colab</a>: managed notebook environment (free tier with limitations)  </li>
+<li>Azure ML notebooks: managed notebook environments within Azure  </li>
+<li><a href="https://jupyter.org/hub">JupyterHub</a>: institution-hosted multi-user notebook server  </li>
+<li><a href="https://mybinder.org/">Binder</a>: temporary environments (no GPU, limited for LLM use)  </li>
+<li>Institution-provided notebook environments (see <a href="../../institutional-resources/remote-deployment/">INSTITUTIONAL RESOURCES/Remote deployment</a>)  </li>
+</ul>
+<h3 id="vm-versus-vre-key-difference">VM versus VRE: key difference</h3>
+<ul>
+<li><strong>VM</strong>: full control over the machine, operating system, and installed services. More flexibility, but more responsibility.  </li>
+<li><strong>VRE</strong>: managed research workspace with preconfigured tools and interfaces. Less control, faster onboarding.  </li>
+</ul>
+<hr />
+<h2 id="example-workflow-step-by-step">Example workflow (step-by-step)</h2>
+<ol>
+<li>Select VM or VRE based on required level of control.  </li>
+<li>Create or request access to the environment.  </li>
+<li>For VMs, configure access (e.g., SSH keys, firewall rules).  </li>
+<li>Install runtime dependencies (Python, libraries, models).  </li>
+<li>Upload or mount data.  </li>
+<li>Run scripts or notebooks for inference or experimentation.  </li>
+<li>Monitor usage, logs, and costs.  </li>
+</ol>
+<hr />
+<h2 id="typical-ssh-workflow-for-vms">Typical SSH workflow for VMs</h2>
+<ol>
+<li>Generate or load your SSH key pair.  </li>
+<li>Add your public key to the VM configuration.  </li>
+<li>Connect using <code>ssh user@host</code>.  </li>
+<li>Use tools like <code>tmux</code> or <code>screen</code> for long-running jobs.  </li>
+<li>Keep scripts version-controlled for reproducibility.  </li>
+</ol>
+<hr />
+<h2 id="pros-and-cons">Pros and cons</h2>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>More compute flexibility than local setups</td>
+<td>Ongoing cost and operational overhead</td>
+</tr>
+<tr>
+<td>Suitable for team collaboration</td>
+<td>Requires setup of security and access controls</td>
+</tr>
+<tr>
+<td>Good balance between control and usability</td>
+<td>Risk of configuration drift without automation</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="learning-resources">Learning resources</h2>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys">SSH tutorial by DigitalOcean</a>: practical SSH basics  </li>
+<li><a href="https://docs.vllm.ai/en/stable/">vLLM documentation</a>: scalable inference on remote GPUs</li>
+</ul>
+
+
+</section>
+
+</div> <!-- end of page-inner -->
+</div> <!-- end of page-wrapper -->
+
+</div> <!-- end of body-inner -->
+
+</div> <!-- end of book-body -->
+<script src="../../js/main.js"></script>
+<script src="../../js/gitbook.min.js"></script>
+<script src="../../js/theme.min.js"></script>
+</body>
+</html>

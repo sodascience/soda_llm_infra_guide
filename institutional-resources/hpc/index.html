@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>HPC - Guide to LLM Computing Infrastructure in the Netherlands</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Practical guidance for researchers on using LLMs and institutional infrastructure in the Netherlands.">
+<meta name="generator" content="mkdocs-1.6.1, mkdocs-gitbook-1.0.7">
+
+<link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta rel="next" href="" />
+<link href="../../css/style.min.css" rel="stylesheet">
+<link href="../../stylesheets/search-fix.css" rel="stylesheet"> 
+</head>
+
+<body>
+<div class="book">
+<div class="book-summary">
+
+<nav role="navigation">
+<ul class="summary">
+<li>
+<a href="../.." target="_blank" class="custom-link">Guide to LLM Computing Infrastructure in the Netherlands</a>
+</li>
+<li class="divider"></li>
+<li class="chapter" data-path="">
+<a href="../..">Home</a>
+<li class="header">How to use LLMs in research</li>
+
+<li>
+<a href="../../how-to-use-llms/overview/" class="">Overview</a>
+</li>
+
+<li>
+<a href="../../how-to-use-llms/chat-interface/" class="">Chat interface</a>
+</li>
+
+<li>
+<a href="../../how-to-use-llms/llm-dashboards/" class="">LLM dashboards</a>
+</li>
+
+<li>
+<a href="../../how-to-use-llms/apis/" class="">APIs</a>
+</li>
+
+<li>
+<a href="../../how-to-use-llms/local-deployment/" class="">Local deployment</a>
+</li>
+
+<li>
+<a href="../../how-to-use-llms/remote-deployment/" class="">Remote deployment</a>
+</li>
+
+<li>
+<a href="../../how-to-use-llms/hpc/" class="">HPC</a>
+</li>
+
+<li class="header">Institutional resources</li>
+
+<li>
+<a href="../overview/" class="">Overview</a>
+</li>
+
+<li>
+<a href="../chat-interface/" class="">Chat interface</a>
+</li>
+
+<li>
+<a href="../apis/" class="">APIs</a>
+</li>
+
+<li>
+<a href="../remote-deployment/" class="">Remote deployment</a>
+</li>
+
+<li>
+<a href="./" class="active">HPC</a>
+</li>
+
+<li class="header">Governance</li>
+
+<li>
+<a href="../../governance/governance/" class="">Governance</a>
+</li>
+
+<li class="divider"></li>
+
+
+
+<li><a href="http://www.mkdocs.org">
+Published with MkDocs
+</a></li>
+
+<li><a href="https://github.com/GitbookIO/theme-default">
+Theme by GitBook
+</a></li>
+</ul>
+
+</nav>
+
+</div> <!-- end of book-summary -->
+
+<div class="book-body">
+<div class="body-inner">
+<div class="book-header" role="navigation">
+
+<!-- Title -->
+<h1>
+<i class="fa fa-circle-o-notch fa-spin"></i>
+<a href="." ></a>
+</h1>
+
+</div> <!-- end of book-header -->
+
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="page-inner">
+
+<section class="normal markdown-section">
+
+
+
+<h1 id="hpc-institutional">HPC (institutional)</h1>
+<h2 id="what-is-this">What is this?</h2>
+<p>Institutional HPC access provides large-scale compute through university clusters and national resources such as Snellius (SURF), typically for workloads that exceed standard remote environments.</p>
+<hr />
+<h2 id="how-it-works-simple-explanation">How it works (simple explanation)</h2>
+<p>You obtain project access and then submit jobs to shared cluster resources. Scheduling systems allocate resources based on quotas, policies, and queue availability.</p>
+<hr />
+<h2 id="concrete-examples-toolsplatforms">Concrete examples (tools/platforms)</h2>
+<ul>
+<li>
+<p><a href="https://www.surf.nl/en/services/compute/snellius-the-national-supercomputer">SURF – Snellius (national supercomputer)</a>: The Dutch national flagship HPC system.  </p>
+</li>
+<li>
+<p><a href="https://lumi-supercomputer.eu/about-lumi/">LUMI</a><br />
+  European pre-exascale supercomputer accessible to Dutch researchers <a href="https://www.surf.nl/en/services/compute/lumi">via SURF</a>.  </p>
+</li>
+<li>
+<p><strong>University-supported HPC clusters</strong>  </p>
+<ul>
+<li>
+<p><a href="https://www.tudelft.nl/dhpc/system">TU Delft – DelftBlue</a>  </p>
+</li>
+<li>
+<p><a href="https://supercomputing.tue.nl">Eindhoven University of Technology – TU/e Supercomputing Center</a>  </p>
+</li>
+<li>
+<p><a href="https://www.tilburguniversity.edu/research/economics-and-management/graduate-school/phd-business/research-facilities">Tilburg University – Blade cluster</a>  </p>
+</li>
+<li>
+<p><a href="https://researchequipment.wur.nl/device/miscellaneous-misc/high-performance-computing-cluster-hpc-anunna">Wageningen University &amp; Research – Anunna</a>  </p>
+</li>
+<li>
+<p><a href="https://www.uu.nl/en/research/research-data-management/tools/software-and-computing/high-performance-and-cloud-computing">Utrecht University</a>  </p>
+</li>
+<li>
+<p><a href="https://www.rug.nl/society-business/centre-for-information-technology/research/services/hpc/facilities/habrok-hpc-cluster?lang=en">University of Groningen – Hábrók cluster</a>  </p>
+</li>
+<li>
+<p><a href="https://www.universiteitleiden.nl/en/research/research-facilities/alice-leiden-computer-cluster">Leiden University – ALICE cluster</a>  </p>
+</li>
+<li>
+<p><a href="https://ada-hpc.readthedocs.io/en/latest/">Vrije Universiteit Amsterdam – ADA cluster</a>  </p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.surf.nl/en/which-service-for-which-research-question">SURF Grid infrastructure</a>: A distributed computing system for large-scale, loosely coupled workloads.</p>
+</li>
+</ul>
+
+
+</section>
+
+</div> <!-- end of page-inner -->
+</div> <!-- end of page-wrapper -->
+
+</div> <!-- end of body-inner -->
+
+</div> <!-- end of book-body -->
+<script src="../../js/main.js"></script>
+<script src="../../js/gitbook.min.js"></script>
+<script src="../../js/theme.min.js"></script>
+</body>
+</html>

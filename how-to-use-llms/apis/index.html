@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>APIs - Guide to LLM Computing Infrastructure in the Netherlands</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Practical guidance for researchers on using LLMs and institutional infrastructure in the Netherlands.">
+<meta name="generator" content="mkdocs-1.6.1, mkdocs-gitbook-1.0.7">
+
+<link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta rel="next" href="" />
+<link href="../../css/style.min.css" rel="stylesheet">
+<link href="../../stylesheets/search-fix.css" rel="stylesheet"> 
+</head>
+
+<body>
+<div class="book">
+<div class="book-summary">
+
+<nav role="navigation">
+<ul class="summary">
+<li>
+<a href="../.." target="_blank" class="custom-link">Guide to LLM Computing Infrastructure in the Netherlands</a>
+</li>
+<li class="divider"></li>
+<li class="chapter" data-path="">
+<a href="../..">Home</a>
+<li class="header">How to use LLMs in research</li>
+
+<li>
+<a href="../overview/" class="">Overview</a>
+</li>
+
+<li>
+<a href="../chat-interface/" class="">Chat interface</a>
+</li>
+
+<li>
+<a href="../llm-dashboards/" class="">LLM dashboards</a>
+</li>
+
+<li>
+<a href="./" class="active">APIs</a>
+</li>
+
+<li>
+<a href="../local-deployment/" class="">Local deployment</a>
+</li>
+
+<li>
+<a href="../remote-deployment/" class="">Remote deployment</a>
+</li>
+
+<li>
+<a href="../hpc/" class="">HPC</a>
+</li>
+
+<li class="header">Institutional resources</li>
+
+<li>
+<a href="../../institutional-resources/overview/" class="">Overview</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/chat-interface/" class="">Chat interface</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/apis/" class="">APIs</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/remote-deployment/" class="">Remote deployment</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/hpc/" class="">HPC</a>
+</li>
+
+<li class="header">Governance</li>
+
+<li>
+<a href="../../governance/governance/" class="">Governance</a>
+</li>
+
+<li class="divider"></li>
+
+
+
+<li><a href="http://www.mkdocs.org">
+Published with MkDocs
+</a></li>
+
+<li><a href="https://github.com/GitbookIO/theme-default">
+Theme by GitBook
+</a></li>
+</ul>
+
+</nav>
+
+</div> <!-- end of book-summary -->
+
+<div class="book-body">
+<div class="body-inner">
+<div class="book-header" role="navigation">
+
+<!-- Title -->
+<h1>
+<i class="fa fa-circle-o-notch fa-spin"></i>
+<a href="." ></a>
+</h1>
+
+</div> <!-- end of book-header -->
+
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="page-inner">
+
+<section class="normal markdown-section">
+
+
+
+<h1 id="apis">APIs</h1>
+<h2 id="what-is-this">What is this?</h2>
+<p>An API (Application Programming Interface) lets your script or application talk directly to an LLM service. Instead of manually typing prompts in a chat window, you write code (e.g., Python, R) to send requests and receive responses. </p>
+<hr />
+<h2 id="when-should-you-use-it">When should you use it?</h2>
+<ul>
+<li>You need repeatable workflows</li>
+<li>You want to process many documents automatically</li>
+<li>You need integration with research scripts, notebooks, or internal tools</li>
+<li>You want better logging, evaluation, and versioning</li>
+<li>You need control over input/output formats and parameters</li>
+</ul>
+<hr />
+<h2 id="when-should-you-not-use-it">When should you NOT use it?</h2>
+<ul>
+<li>When your use case is occasional and exploratory only</li>
+<li>When your team has no capacity for basic scripting support</li>
+<li>When policy constraints prevent use of external API providers</li>
+</ul>
+<hr />
+<h2 id="how-it-works-simple-explanation">How it works (simple explanation)</h2>
+<p>Your code sends structured input (prompt, parameters, optional context) to an API endpoint. The API endpoint is, in short, a URL that accepts such input and returns model output in a machine-readable format. This enables automation and consistent processing logic.</p>
+<hr />
+<h2 id="concrete-examples-toolsplatforms">Concrete examples (tools/platforms)</h2>
+<ul>
+<li>Provider APIs (commercial or institutional). For example:<ul>
+<li><a href="https://developers.openai.com/api/docs">OpenAI API</a> for GPT models</li>
+<li><a href="https://docs.anthropic.com/claude/reference/getting-started">Claude API</a> for Anthropic models</li>
+<li><a href="https://ai.google.dev/gemini-api">Gemini API</a> for Google models</li>
+</ul>
+</li>
+<li>API client libraries in Python, R, or other languages. These libraries simplify the process of sending requests and handling responses. For example:<ul>
+<li><a href="https://www.langchain.com/">LangChain</a> in Python for pipeline orchestration</li>
+<li><a href="https://ellmer.tidyverse.org/">ellmer</a> in R for conversational and prompt workflows in data science contexts</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="example-workflow-step-by-step">Example workflow (step-by-step)</h2>
+<ol>
+<li>Define a single research task, such as coding open-ended survey responses.</li>
+<li>Create a prompt template with clear output schema.</li>
+<li>Implement a script that reads rows from your dataset.</li>
+<li>Send each row to the API and parse the response.</li>
+<li>Store outputs with metadata (model, prompt version, timestamp).</li>
+<li>Evaluate quality on a validation subset and revise prompt/template.</li>
+</ol>
+<hr />
+<h2 id="pros-and-cons">Pros and cons</h2>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Enables automation and scale</td>
+<td>Requires scripting and API key management</td>
+</tr>
+<tr>
+<td>Supports reproducible pipelines</td>
+<td>Cost management becomes important at volume</td>
+</tr>
+<tr>
+<td>Easier integration with existing tools</td>
+<td>Governance checks may be more complex</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="learning-resources">Learning resources</h2>
+<ul>
+<li><a href="https://arxiv.org/abs/2604.09638">Workflow/Tutorial Paper: A Methodological Guide on Using Large Language Models for Text Annotation in the Social Sciences and Humanities with Python and R</a> (A SoDa-led preprint paper with code examples and best practices for LLM annotation workflows)</li>
+<li><a href="https://sodascience.github.io/workshop_llm_data_collection/">SoDa Workshop: Using LLMs for Data Collection/Annotation in Social Sciences</a><ul>
+<li><a href="https://github.com/sodascience/workshop_llm_data_collection?tab=readme-ov-file">GitHub Repository</a> (with code notebooks and slides from the workshop)</li>
+<li><a href="https://odissei-soda.nl/workshops/">SoDa Workshop Overview and Upcoming Sessions</a> (You can find the LLM data collection workshop here when it is scheduled)</li>
+<li><a href="https://odissei-data.nl/about-odissei/">ODISSEI Newsletter</a> (Scroll down to bottom and subscribe to stay updated on workshops and resources)</li>
+</ul>
+</li>
+<li><a href="https://odissei-soda.nl/tutorials/llm_batch_structured_output/">SoDa Blog post: The Best of Both Worlds: Saving Costs and Time When Using OpenAI's API - Combining OpenAI's Batch API and Structured Outputs</a></li>
+<li><a href="https://github.com/sodascience/social_science_inferences_with_llms">GitHub Repository: Addressing LLM-related Measurement Error in Social Science Research</a> (Overview of literature and tools for addressing measurement errors in LLM predictions/annotations when you use them in downstream statistical analyses)</li>
+</ul>
+
+
+</section>
+
+</div> <!-- end of page-inner -->
+</div> <!-- end of page-wrapper -->
+
+</div> <!-- end of body-inner -->
+
+</div> <!-- end of book-body -->
+<script src="../../js/main.js"></script>
+<script src="../../js/gitbook.min.js"></script>
+<script src="../../js/theme.min.js"></script>
+</body>
+</html>

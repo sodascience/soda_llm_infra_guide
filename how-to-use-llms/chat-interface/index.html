@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Chat interface - Guide to LLM Computing Infrastructure in the Netherlands</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Practical guidance for researchers on using LLMs and institutional infrastructure in the Netherlands.">
+<meta name="generator" content="mkdocs-1.6.1, mkdocs-gitbook-1.0.7">
+
+<link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta rel="next" href="" />
+<link href="../../css/style.min.css" rel="stylesheet">
+<link href="../../stylesheets/search-fix.css" rel="stylesheet"> 
+</head>
+
+<body>
+<div class="book">
+<div class="book-summary">
+
+<nav role="navigation">
+<ul class="summary">
+<li>
+<a href="../.." target="_blank" class="custom-link">Guide to LLM Computing Infrastructure in the Netherlands</a>
+</li>
+<li class="divider"></li>
+<li class="chapter" data-path="">
+<a href="../..">Home</a>
+<li class="header">How to use LLMs in research</li>
+
+<li>
+<a href="../overview/" class="">Overview</a>
+</li>
+
+<li>
+<a href="./" class="active">Chat interface</a>
+</li>
+
+<li>
+<a href="../llm-dashboards/" class="">LLM dashboards</a>
+</li>
+
+<li>
+<a href="../apis/" class="">APIs</a>
+</li>
+
+<li>
+<a href="../local-deployment/" class="">Local deployment</a>
+</li>
+
+<li>
+<a href="../remote-deployment/" class="">Remote deployment</a>
+</li>
+
+<li>
+<a href="../hpc/" class="">HPC</a>
+</li>
+
+<li class="header">Institutional resources</li>
+
+<li>
+<a href="../../institutional-resources/overview/" class="">Overview</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/chat-interface/" class="">Chat interface</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/apis/" class="">APIs</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/remote-deployment/" class="">Remote deployment</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/hpc/" class="">HPC</a>
+</li>
+
+<li class="header">Governance</li>
+
+<li>
+<a href="../../governance/governance/" class="">Governance</a>
+</li>
+
+<li class="divider"></li>
+
+
+
+<li><a href="http://www.mkdocs.org">
+Published with MkDocs
+</a></li>
+
+<li><a href="https://github.com/GitbookIO/theme-default">
+Theme by GitBook
+</a></li>
+</ul>
+
+</nav>
+
+</div> <!-- end of book-summary -->
+
+<div class="book-body">
+<div class="body-inner">
+<div class="book-header" role="navigation">
+
+<!-- Title -->
+<h1>
+<i class="fa fa-circle-o-notch fa-spin"></i>
+<a href="." ></a>
+</h1>
+
+</div> <!-- end of book-header -->
+
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="page-inner">
+
+<section class="normal markdown-section">
+
+
+
+<h1 id="chat-interface">Chat interface</h1>
+<h2 id="what-is-this">What is this?</h2>
+<p>A chat interface is the most direct way to use a large language model (LLM): you type a prompt and receive a response in a conversational window, similar to tools like ChatGPT, Claude, or Gemini.</p>
+<hr />
+<h2 id="when-should-you-use-it">When should you use it?</h2>
+<ul>
+<li>Early idea generation  </li>
+<li>Drafting and rewriting text  </li>
+<li>Quick coding support and debugging hints  </li>
+<li>Fast exploration of a research topic before formal analysis  </li>
+<li>Explaining complex concepts in simple language for education or communication purposes</li>
+</ul>
+<hr />
+<h2 id="when-should-you-not-use-it">When should you NOT use it?</h2>
+<ul>
+<li>When you need strict reproducibility or traceability of outputs  </li>
+<li>When you must automate repeated tasks at scale  </li>
+<li>When your workflow requires integration with scripts or datasets  </li>
+<li>When governance policies restrict data entry into external services  </li>
+</ul>
+<hr />
+<h2 id="how-it-works-simple-explanation">How it works (simple explanation)</h2>
+<p>You provide instructions in natural language. The model generates a response by predicting a likely continuation of text given your input and prior context.</p>
+<p>The interface manages conversation history for you, but typically hides system-level instructions and offers limited control over model parameters, tools, and backend infrastructure.</p>
+<hr />
+<h2 id="concrete-examples-toolsplatforms">Concrete examples (tools/platforms)</h2>
+<ul>
+<li>Public chat assistants (e.g., ChatGPT, Claude, Gemini)  </li>
+<li>Institution-provided chat tools (see <a href="../../institutional-resources/chat-interface/">INSTITUTIONAL RESOURCES: Chat interface</a>)  </li>
+<li>Enterprise chat interfaces with governance and access controls  </li>
+</ul>
+<hr />
+<h2 id="example-workflow-step-by-step">Example workflow (step-by-step)</h2>
+<ol>
+<li>Define your immediate goal (e.g., explain a figure in a research paper).  </li>
+<li>Write a prompt including context (e.g., background information and research questions), constraints (e.g., tone), and expected output format (e.g., bullet points).  </li>
+<li>Iterate with follow-up prompts to refine structure and accuracy (e.g., ask for more details or a different format).  </li>
+<li>Verify key claims against original sources (e.g., academic papers or datasets).  </li>
+<li>Save effective prompts for reuse (e.g., in shared notes or templates).  </li>
+</ol>
+<hr />
+<h2 id="pros-and-cons">Pros and cons</h2>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fastest way to start</td>
+<td>Limited control over automation and configuration</td>
+</tr>
+<tr>
+<td>Low technical barrier</td>
+<td>Outputs are difficult to reproduce exactly</td>
+</tr>
+<tr>
+<td>Strong for brainstorming and writing support</td>
+<td>Limited traceability of decisions and prompts</td>
+</tr>
+<tr>
+<td>No setup required</td>
+<td>Risk of fluent but incorrect outputs</td>
+</tr>
+</tbody>
+</table>
+<h2 id="learning-resources">Learning resources</h2>
+<p>N.A.</p>
+
+
+</section>
+
+</div> <!-- end of page-inner -->
+</div> <!-- end of page-wrapper -->
+
+</div> <!-- end of body-inner -->
+
+</div> <!-- end of book-body -->
+<script src="../../js/main.js"></script>
+<script src="../../js/gitbook.min.js"></script>
+<script src="../../js/theme.min.js"></script>
+</body>
+</html>

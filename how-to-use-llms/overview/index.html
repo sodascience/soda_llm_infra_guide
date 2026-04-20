@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Overview - Guide to LLM Computing Infrastructure in the Netherlands</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Practical guidance for researchers on using LLMs and institutional infrastructure in the Netherlands.">
+<meta name="generator" content="mkdocs-1.6.1, mkdocs-gitbook-1.0.7">
+
+<link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta rel="next" href="" />
+<link href="../../css/style.min.css" rel="stylesheet">
+<link href="../../stylesheets/search-fix.css" rel="stylesheet"> 
+</head>
+
+<body>
+<div class="book">
+<div class="book-summary">
+
+<nav role="navigation">
+<ul class="summary">
+<li>
+<a href="../.." target="_blank" class="custom-link">Guide to LLM Computing Infrastructure in the Netherlands</a>
+</li>
+<li class="divider"></li>
+<li class="chapter" data-path="">
+<a href="../..">Home</a>
+<li class="header">How to use LLMs in research</li>
+
+<li>
+<a href="./" class="active">Overview</a>
+</li>
+
+<li>
+<a href="../chat-interface/" class="">Chat interface</a>
+</li>
+
+<li>
+<a href="../llm-dashboards/" class="">LLM dashboards</a>
+</li>
+
+<li>
+<a href="../apis/" class="">APIs</a>
+</li>
+
+<li>
+<a href="../local-deployment/" class="">Local deployment</a>
+</li>
+
+<li>
+<a href="../remote-deployment/" class="">Remote deployment</a>
+</li>
+
+<li>
+<a href="../hpc/" class="">HPC</a>
+</li>
+
+<li class="header">Institutional resources</li>
+
+<li>
+<a href="../../institutional-resources/overview/" class="">Overview</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/chat-interface/" class="">Chat interface</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/apis/" class="">APIs</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/remote-deployment/" class="">Remote deployment</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/hpc/" class="">HPC</a>
+</li>
+
+<li class="header">Governance</li>
+
+<li>
+<a href="../../governance/governance/" class="">Governance</a>
+</li>
+
+<li class="divider"></li>
+
+
+
+<li><a href="http://www.mkdocs.org">
+Published with MkDocs
+</a></li>
+
+<li><a href="https://github.com/GitbookIO/theme-default">
+Theme by GitBook
+</a></li>
+</ul>
+
+</nav>
+
+</div> <!-- end of book-summary -->
+
+<div class="book-body">
+<div class="body-inner">
+<div class="book-header" role="navigation">
+
+<!-- Title -->
+<h1>
+<i class="fa fa-circle-o-notch fa-spin"></i>
+<a href="." ></a>
+</h1>
+
+</div> <!-- end of book-header -->
+
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="page-inner">
+
+<section class="normal markdown-section">
+
+
+
+<h1 id="how-to-use-llms-in-research">How to use LLMs in research</h1>
+<p>Researchers can use LLMs through several pathways. These pathways differ in two key dimensions:</p>
+<ul>
+<li><strong>Level of control</strong>: how much you can customize prompts, models, data flow, and deployment.</li>
+<li><strong>Technical difficulty</strong>: how much setup and engineering effort is needed.</li>
+</ul>
+<p>The practical spectrum is:</p>
+<blockquote>
+<p><strong>chat -&gt; dashboards -&gt; APIs -&gt; local deployment -&gt; remote deployment -&gt; HPC</strong></p>
+</blockquote>
+<p>Moving right usually increases control and complexity.</p>
+<hr />
+<h2 id="comparison-across-usage-modes">Comparison Across Usage Modes</h2>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Control</th>
+<th>Technical difficulty</th>
+<th>Typical speed to start</th>
+<th>Best for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chat interface</td>
+<td>Low</td>
+<td>Very low</td>
+<td>Minutes</td>
+<td>Ideation, writing support, quick coding help</td>
+</tr>
+<tr>
+<td>LLM dashboards</td>
+<td>Low to medium</td>
+<td>Low</td>
+<td>Minutes to hours</td>
+<td>Prompt testing, comparing outputs</td>
+</tr>
+<tr>
+<td>APIs</td>
+<td>Medium to high</td>
+<td>Medium</td>
+<td>Hours to days</td>
+<td>Automation, integrating LLMs in research pipelines</td>
+</tr>
+<tr>
+<td>Local deployment</td>
+<td>High</td>
+<td>Medium to high</td>
+<td>Days</td>
+<td>Privacy-sensitive work on manageable model sizes</td>
+</tr>
+<tr>
+<td>Remote deployment</td>
+<td>High</td>
+<td>Medium to high</td>
+<td>Days</td>
+<td>Team workflows, controlled environments, larger models</td>
+</tr>
+<tr>
+<td>HPC</td>
+<td>Very high</td>
+<td>High</td>
+<td>Days to weeks</td>
+<td>Large-scale experiments, parallel jobs, fine-tuning</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="how-to-interpret-the-spectrum">How To Interpret The Spectrum</h2>
+<ul>
+<li>If your goal is <strong>speed and ease</strong>, start with chat or dashboard tools.</li>
+<li>If your goal is <strong>reproducibility and automation</strong>, APIs are often the turning point.</li>
+<li>If your goal is <strong>data control or model control</strong>, local and remote deployments become relevant.</li>
+<li>If your goal is <strong>scale</strong>, HPC is typically required.</li>
+</ul>
+<hr />
+<h2 id="practical-decision-rules">Practical Decision Rules</h2>
+<ol>
+<li>Use the simplest option that meets your governance and data requirements.</li>
+<li>Move to a more advanced option only when your current approach blocks research quality or scale.</li>
+<li>Keep a migration path in mind: chat prompts can become dashboard experiments, then API workflows.</li>
+</ol>
+<hr />
+<h2 id="typical-progression-in-real-projects">Typical Progression In Real Projects</h2>
+<p>Many projects start with exploratory prompting in chat interfaces, then transition to structured prompt testing in dashboards, and later move to APIs for reproducible scripts. Teams handling sensitive data often shift to institutionally managed remote environments, and computationally intensive projects eventually migrate to HPC.</p>
+
+
+</section>
+
+</div> <!-- end of page-inner -->
+</div> <!-- end of page-wrapper -->
+
+</div> <!-- end of body-inner -->
+
+</div> <!-- end of book-body -->
+<script src="../../js/main.js"></script>
+<script src="../../js/gitbook.min.js"></script>
+<script src="../../js/theme.min.js"></script>
+</body>
+</html>

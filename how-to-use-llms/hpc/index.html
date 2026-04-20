@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>HPC - Guide to LLM Computing Infrastructure in the Netherlands</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Practical guidance for researchers on using LLMs and institutional infrastructure in the Netherlands.">
+<meta name="generator" content="mkdocs-1.6.1, mkdocs-gitbook-1.0.7">
+
+<link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta rel="next" href="" />
+<link href="../../css/style.min.css" rel="stylesheet">
+<link href="../../stylesheets/search-fix.css" rel="stylesheet"> 
+</head>
+
+<body>
+<div class="book">
+<div class="book-summary">
+
+<nav role="navigation">
+<ul class="summary">
+<li>
+<a href="../.." target="_blank" class="custom-link">Guide to LLM Computing Infrastructure in the Netherlands</a>
+</li>
+<li class="divider"></li>
+<li class="chapter" data-path="">
+<a href="../..">Home</a>
+<li class="header">How to use LLMs in research</li>
+
+<li>
+<a href="../overview/" class="">Overview</a>
+</li>
+
+<li>
+<a href="../chat-interface/" class="">Chat interface</a>
+</li>
+
+<li>
+<a href="../llm-dashboards/" class="">LLM dashboards</a>
+</li>
+
+<li>
+<a href="../apis/" class="">APIs</a>
+</li>
+
+<li>
+<a href="../local-deployment/" class="">Local deployment</a>
+</li>
+
+<li>
+<a href="../remote-deployment/" class="">Remote deployment</a>
+</li>
+
+<li>
+<a href="./" class="active">HPC</a>
+</li>
+
+<li class="header">Institutional resources</li>
+
+<li>
+<a href="../../institutional-resources/overview/" class="">Overview</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/chat-interface/" class="">Chat interface</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/apis/" class="">APIs</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/remote-deployment/" class="">Remote deployment</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/hpc/" class="">HPC</a>
+</li>
+
+<li class="header">Governance</li>
+
+<li>
+<a href="../../governance/governance/" class="">Governance</a>
+</li>
+
+<li class="divider"></li>
+
+
+
+<li><a href="http://www.mkdocs.org">
+Published with MkDocs
+</a></li>
+
+<li><a href="https://github.com/GitbookIO/theme-default">
+Theme by GitBook
+</a></li>
+</ul>
+
+</nav>
+
+</div> <!-- end of book-summary -->
+
+<div class="book-body">
+<div class="body-inner">
+<div class="book-header" role="navigation">
+
+<!-- Title -->
+<h1>
+<i class="fa fa-circle-o-notch fa-spin"></i>
+<a href="." ></a>
+</h1>
+
+</div> <!-- end of book-header -->
+
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="page-inner">
+
+<section class="normal markdown-section">
+
+
+
+<h1 id="hpc">HPC</h1>
+<h2 id="what-is-this">What is this?</h2>
+<p>HPC (High-Performance Computing) refers to shared computing clusters designed to run large-scale, compute-intensive workloads that exceed the capacity of local machines or small virtual machines.</p>
+<p>These systems typically consist of many interconnected nodes (CPUs/GPUs) managed by a scheduler, allowing users to run jobs in parallel at scale.</p>
+<hr />
+<h2 id="when-should-you-use-it">When should you use it?</h2>
+<ul>
+<li>You need to run large batches of LLM experiments  </li>
+<li>You need high-memory or multi-GPU jobs  </li>
+<li>You need parallel evaluation across many datasets or models  </li>
+<li>You are fine-tuning models or running large-scale benchmarking  </li>
+<li>You need reproducible, large-scale pipelines  </li>
+</ul>
+<hr />
+<h2 id="when-should-you-not-use-it">When should you NOT use it?</h2>
+<ul>
+<li>For quick exploratory prompting  </li>
+<li>For small workloads that run well locally or on a VM  </li>
+<li>When your workflow requires real-time interaction  </li>
+<li>When your team cannot maintain job scripts and queue-based workflows  </li>
+</ul>
+<hr />
+<h2 id="how-it-works-simple-explanation">How it works (simple explanation)</h2>
+<p>You submit jobs to a scheduler (commonly Slurm) using batch scripts. The scheduler queues your job and executes it when the requested resources become available.</p>
+<ul>
+<li><strong>Jobs / batch scripts</strong>: Non-interactive scripts specifying what to run and required resources  </li>
+<li><strong>Scheduler</strong>: Software (e.g., Slurm) that manages job submission, scheduling, and execution  </li>
+<li><strong>Queue</strong>: A waiting line where jobs are held until resources become available; priority may depend on policies or quotas  </li>
+<li><strong>Resources</strong>: Requested compute such as CPUs, GPUs, memory, runtime, and number of nodes  </li>
+</ul>
+<hr />
+<h2 id="concrete-examples-toolsplatforms">Concrete examples (tools/platforms)</h2>
+<h3 id="academic-and-national-hpc">Academic and national HPC</h3>
+<ul>
+<li>University HPC clusters  </li>
+<li>National infrastructure such as SURF (e.g., Snellius)  </li>
+</ul>
+<p>See <a href="../../institutional-resources/hpc/">INSTITUTIONAL RESOURCES/HPC</a> for more.</p>
+<h3 id="commercial-hpc-hpc-as-a-service">Commercial HPC (HPC-as-a-Service)</h3>
+<ul>
+<li><a href="https://aws.amazon.com/hpc/">AWS (EC2 + ParallelCluster)</a>: scalable HPC clusters with GPU support  </li>
+<li><a href="https://azure.microsoft.com/en-us/solutions/high-performance-computing/">Microsoft Azure HPC</a>: GPU clusters with high-speed interconnects  </li>
+<li><a href="https://cloud.google.com/hpc">Google Cloud HPC</a>: distributed workloads with GPUs/TPUs  </li>
+<li><a href="https://www.oracle.com/cloud/hpc/">Oracle Cloud Infrastructure (OCI) HPC</a>: HPC with low-latency networking  </li>
+<li><a href="https://www.ovhcloud.com/en/bare-metal/uc-high-performance-computing/">OVHcloud HPC</a>: European HPC and GPU clusters (GDPR-friendly option)  </li>
+</ul>
+<hr />
+<h2 id="example-workflow-step-by-step">Example workflow (step-by-step)</h2>
+<ol>
+<li>Prepare a reproducible environment (modules, container, or environment file).  </li>
+<li>Write a batch script specifying CPU/GPU, memory, and time requirements.  </li>
+<li>Submit the job via the scheduler (e.g., <code>sbatch</code>).  </li>
+<li>Monitor job status and logs.  </li>
+<li>Validate outputs and iterate with adjusted parameters.  </li>
+<li>Archive results, logs, and configuration for reproducibility.  </li>
+</ol>
+<hr />
+<h2 id="pros-and-cons">Pros and cons</h2>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Handles large-scale and parallel workloads</td>
+<td>Steeper learning curve than chat or API use</td>
+</tr>
+<tr>
+<td>Access to high-end compute and storage</td>
+<td>Queue times can delay iteration</td>
+</tr>
+<tr>
+<td>Strong fit for reproducible batch pipelines</td>
+<td>Requires planning and resource estimation</td>
+</tr>
+<tr>
+<td>Enables multi-GPU and distributed workloads</td>
+<td>Less suitable for interactive exploration</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="learning-resources">Learning resources</h2>
+<h3 id="batch-jobs-and-slurm-basics">Batch jobs and Slurm basics</h3>
+<ul>
+<li><a href="https://carpentries-incubator.github.io/hpc-intro/">Excellent beginner-friendly HPC tutorial</a></li>
+<li><a href="https://slurm.schedmd.com/documentation.html">Official Slurm documentation</a>  </li>
+</ul>
+<h3 id="running-llm-workloads-on-hpc">Running LLM workloads on HPC</h3>
+<ul>
+<li><a href="https://huggingface.co/docs/accelerate/index">Accelerate</a>: This Hugging Face Accelerate documentation provides a practical guide to scaling PyTorch-based workflows from local machines to distributed environments such as multi-GPU servers, cloud instances, or HPC clusters. It introduces a lightweight abstraction (<code>Accelerator</code>) that allows researchers to run the same code across different hardware setups with minimal changes, while handling device placement, parallelism, and mixed precision under the hood. The documentation also includes a range of tutorials and how-to guides covering both beginner and advanced topics for training and inference, such as the <a href="https://pytorch.org/tutorials/intermediate/ddp_tutorial.html">Distributed Data Parallel tutorial</a> and <a href="https://huggingface.co/docs/accelerate/usage_guides/deepspeed">DeepSpeed integration</a>.</li>
+<li><a href="https://docs.vllm.ai/en/latest/">vLLM</a>: library for scalable LLM inference (often used on HPC clusters)  </li>
+</ul>
+<h3 id="environment-management-and-reproducibility">Environment management and reproducibility</h3>
+<ul>
+<li><a href="https://docs.docker.com/">docker</a>: containerization for consistent environments  </li>
+<li><a href="https://apptainer.org/docs/">apptainer</a>: HPC-friendly containers (formerly Singularity)  </li>
+</ul>
+<h3 id="hpc-knowledge-bases">HPC knowledge bases</h3>
+<ul>
+<li><a href="https://hpc-wiki.info/hpc/">HPC-Wiki</a> </li>
+<li><a href="https://researchcomputing.princeton.edu/support/knowledge-base">Princeton Research Computing</a></li>
+</ul>
+
+
+</section>
+
+</div> <!-- end of page-inner -->
+</div> <!-- end of page-wrapper -->
+
+</div> <!-- end of body-inner -->
+
+</div> <!-- end of book-body -->
+<script src="../../js/main.js"></script>
+<script src="../../js/gitbook.min.js"></script>
+<script src="../../js/theme.min.js"></script>
+</body>
+</html>

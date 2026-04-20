@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Local deployment - Guide to LLM Computing Infrastructure in the Netherlands</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Practical guidance for researchers on using LLMs and institutional infrastructure in the Netherlands.">
+<meta name="generator" content="mkdocs-1.6.1, mkdocs-gitbook-1.0.7">
+
+<link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta rel="next" href="" />
+<link href="../../css/style.min.css" rel="stylesheet">
+<link href="../../stylesheets/search-fix.css" rel="stylesheet"> 
+</head>
+
+<body>
+<div class="book">
+<div class="book-summary">
+
+<nav role="navigation">
+<ul class="summary">
+<li>
+<a href="../.." target="_blank" class="custom-link">Guide to LLM Computing Infrastructure in the Netherlands</a>
+</li>
+<li class="divider"></li>
+<li class="chapter" data-path="">
+<a href="../..">Home</a>
+<li class="header">How to use LLMs in research</li>
+
+<li>
+<a href="../overview/" class="">Overview</a>
+</li>
+
+<li>
+<a href="../chat-interface/" class="">Chat interface</a>
+</li>
+
+<li>
+<a href="../llm-dashboards/" class="">LLM dashboards</a>
+</li>
+
+<li>
+<a href="../apis/" class="">APIs</a>
+</li>
+
+<li>
+<a href="./" class="active">Local deployment</a>
+</li>
+
+<li>
+<a href="../remote-deployment/" class="">Remote deployment</a>
+</li>
+
+<li>
+<a href="../hpc/" class="">HPC</a>
+</li>
+
+<li class="header">Institutional resources</li>
+
+<li>
+<a href="../../institutional-resources/overview/" class="">Overview</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/chat-interface/" class="">Chat interface</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/apis/" class="">APIs</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/remote-deployment/" class="">Remote deployment</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/hpc/" class="">HPC</a>
+</li>
+
+<li class="header">Governance</li>
+
+<li>
+<a href="../../governance/governance/" class="">Governance</a>
+</li>
+
+<li class="divider"></li>
+
+
+
+<li><a href="http://www.mkdocs.org">
+Published with MkDocs
+</a></li>
+
+<li><a href="https://github.com/GitbookIO/theme-default">
+Theme by GitBook
+</a></li>
+</ul>
+
+</nav>
+
+</div> <!-- end of book-summary -->
+
+<div class="book-body">
+<div class="body-inner">
+<div class="book-header" role="navigation">
+
+<!-- Title -->
+<h1>
+<i class="fa fa-circle-o-notch fa-spin"></i>
+<a href="." ></a>
+</h1>
+
+</div> <!-- end of book-header -->
+
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="page-inner">
+
+<section class="normal markdown-section">
+
+
+
+<h1 id="local-deployment">Local deployment</h1>
+<h2 id="what-is-this">What is this?</h2>
+<p>Local deployment means running an LLM on your own machine or on institution-managed hardware under your direct control, instead of relying on an externally hosted API.</p>
+<hr />
+<h2 id="when-should-you-use-it">When should you use it?</h2>
+<ul>
+<li>You need stronger control over data locality (e.g., sensitive data that cannot leave your machine)</li>
+<li>You want offline or low-latency experimentation</li>
+<li>You are testing smaller open models for specialized tasks</li>
+<li>You want to validate models before scaling to remote environments</li>
+<li>You have access to local hardware that can support the model size you need</li>
+<li>You want to avoid ongoing costs of remote compute for frequent inference</li>
+</ul>
+<hr />
+<h2 id="when-should-you-not-use-it">When should you NOT use it?</h2>
+<ul>
+<li>When you need very large models that exceed local hardware limits</li>
+<li>When cloud or institutional infrastructure is already available and policy-approved</li>
+<li>When you need to collaborate with a team that cannot access the same local environment</li>
+<li>When you want to quickly iterate without the overhead of local setup and maintenance</li>
+</ul>
+<hr />
+<h2 id="how-it-works-simple-explanation">How it works (simple explanation)</h2>
+<p>You install a local inference runtime, download model weights, and run prompts directly on your machine. Performance (latency, throughput) depends heavily on CPU/GPU memory and model size.</p>
+<hr />
+<h2 id="concrete-examples-toolsplatforms">Concrete examples (tools/platforms)</h2>
+<ul>
+<li>
+<p>User-friendly local LLM apps</p>
+<ul>
+<li><a href="https://ollama.com/">Ollama</a>: easy-to-use local LLM runtime with chat + API interface  </li>
+<li><a href="https://lmstudio.ai/">LM Studio</a>: desktop app for running and chatting with local models  </li>
+<li><a href="https://jan.ai/">Jan.ai</a>： open-source local AI assistant with privacy focus  </li>
+</ul>
+</li>
+<li>
+<p>Inference engines (core runtime layer)</p>
+<ul>
+<li><a href="https://github.com/ggerganov/llama.cpp">llama.cpp</a>： efficient C++ inference engine for running quantized models locally  </li>
+<li><a href="https://github.com/vllm-project/vllm">vLLM</a>： high-performance inference engine for serving LLMs</li>
+<li><a href="https://github.com/huggingface/text-generation-inference">Text Generation Inference</a>: production-ready LLM inference server</li>
+</ul>
+</li>
+<li>
+<p>Programming frameworks (research workflows)</p>
+<ul>
+<li><a href="https://huggingface.co/docs/transformers/index">Hugging Face Transformers</a>： Python library for loading and running LLMs programmatically  </li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="example-workflow-step-by-step">Example workflow (step-by-step)</h2>
+<ol>
+<li>Select a model size your hardware can support.</li>
+<li>Install a local inference tool and required dependencies.</li>
+<li>Download model weights from a trusted source.</li>
+<li>Run a baseline prompt benchmark on sample data.</li>
+<li>Tune runtime settings (context length, precision, batch size).</li>
+<li>Validate output quality before wider use.</li>
+</ol>
+<hr />
+<h2 id="pros-and-cons">Pros and cons</h2>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Strong data control and local execution</td>
+<td>Limited by hardware memory and compute</td>
+</tr>
+<tr>
+<td>Useful for offline experimentation</td>
+<td>Setup and maintenance burden</td>
+</tr>
+<tr>
+<td>Potentially lower long-term per-call cost</td>
+<td>Large models may be impractical</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="learning-resources">Learning resources</h2>
+<h3 id="getting-started-quick-local-setup">Getting started (quick local setup)</h3>
+<ul>
+<li><a href="https://ollama.com/docs">Ollama docs</a>: beginner-friendly way to run and manage LLMs locally  </li>
+<li><a href="https://github.com/ggerganov/llama.cpp">llama.cpp</a>: practical guide and examples for running LLMs locally (CPU/GPU, quantization)  </li>
+</ul>
+<h3 id="research-workflows-core-libraries">Research workflows (core libraries)</h3>
+<ul>
+<li><a href="https://huggingface.co/docs/transformers/index">Hugging Face Transformers docs</a>: load models, run inference, build pipelines  </li>
+<li><a href="https://github.com/huggingface/accelerate">Hugging Face Accelerate</a>: manage CPU/GPU and multi-device setups  </li>
+<li><a href="https://github.com/microsoft/guidance">Microsoft Guidance</a>: structured prompting and controlled generation</li>
+</ul>
+<h3 id="serving-scaling-api-style-deployment">Serving &amp; scaling (API-style deployment)</h3>
+<ul>
+<li><a href="https://docs.vllm.ai/en/stable/">vLLM docs</a>: high-performance inference engine for scalable deployment  </li>
+<li><a href="https://huggingface.co/docs/text-generation-inference/index">Text Generation Inference (TGI)</a>: production-ready LLM serving  </li>
+<li><a href="https://github.com/open-webui/open-webui">Open WebUI</a>: self-hosted chat interface for local models  </li>
+</ul>
+<h3 id="fine-tuning-advanced">Fine-tuning (advanced)</h3>
+<ul>
+<li><a href="https://huggingface.co/docs/peft/index">PEFT (Parameter-Efficient Fine-Tuning)</a>: efficient fine-tuning methods like LoRA  </li>
+<li><a href="https://github.com/artidoro/qlora">QLoRA</a>: fine-tune large models on limited hardware  </li>
+</ul>
+<h3 id="learning-fundamentals">Learning &amp; fundamentals</h3>
+<ul>
+<li><a href="https://www.deeplearning.ai/short-courses/open-source-models-hugging-face/">DeepLearning.AI: Open-Source Models with Hugging Face</a>: structured course on using open models locally  </li>
+<li><a href="https://github.com/karpathy/llm.c">llm.c</a>: minimal implementation for understanding LLM internals  </li>
+</ul>
+
+
+</section>
+
+</div> <!-- end of page-inner -->
+</div> <!-- end of page-wrapper -->
+
+</div> <!-- end of body-inner -->
+
+</div> <!-- end of book-body -->
+<script src="../../js/main.js"></script>
+<script src="../../js/gitbook.min.js"></script>
+<script src="../../js/theme.min.js"></script>
+</body>
+</html>
