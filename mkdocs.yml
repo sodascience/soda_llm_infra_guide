@@ -34,4 +34,6 @@ nav:
       - Remote deployment: institutional-resources/remote-deployment.md
       - HPC: institutional-resources/hpc.md
   - Governance:
-      - Governance: governance/governance.md
+      - Overview: governance/overview.md
+      - Using LLMs with data: governance/using-llms-with-data.md
+      - Institutional rules: governance/institutional-rules.md
