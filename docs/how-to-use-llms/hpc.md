@@ -48,11 +48,11 @@ See [INSTITUTIONAL RESOURCES/HPC](../institutional-resources/hpc.md) for more.
 
 ### Commercial HPC (HPC-as-a-Service)
 
-- [AWS (EC2 + ParallelCluster)](https://aws.amazon.com/hpc/) — scalable HPC clusters with GPU support  
-- [Microsoft Azure HPC](https://azure.microsoft.com/en-us/solutions/high-performance-computing/) — GPU clusters with high-speed interconnects  
-- [Google Cloud HPC](https://cloud.google.com/hpc) — distributed workloads with GPUs/TPUs  
-- [Oracle Cloud Infrastructure (OCI) HPC](https://www.oracle.com/cloud/hpc/) — HPC with low-latency networking  
-- [OVHcloud HPC](https://www.ovhcloud.com/en/bare-metal/uc-high-performance-computing/) — European HPC and GPU clusters (GDPR-friendly option)  
+- [AWS (EC2 + ParallelCluster)](https://aws.amazon.com/hpc/): scalable HPC clusters with GPU support  
+- [Microsoft Azure HPC](https://azure.microsoft.com/en-us/solutions/high-performance-computing/): GPU clusters with high-speed interconnects  
+- [Google Cloud HPC](https://cloud.google.com/hpc): distributed workloads with GPUs/TPUs  
+- [Oracle Cloud Infrastructure (OCI) HPC](https://www.oracle.com/cloud/hpc/): HPC with low-latency networking  
+- [OVHcloud HPC](https://www.ovhcloud.com/en/bare-metal/uc-high-performance-computing/): European HPC and GPU clusters (GDPR-friendly option)  
 
 ---
 
@@ -81,16 +81,16 @@ See [INSTITUTIONAL RESOURCES/HPC](../institutional-resources/hpc.md) for more.
 ## Learning resources
 
 ### Batch jobs and Slurm basics
-- https://carpentries-incubator.github.io/hpc-intro/ — excellent beginner-friendly HPC tutorial
-- https://slurm.schedmd.com/documentation.html — official Slurm documentation  
+- [Excellent beginner-friendly HPC tutorial](https://carpentries-incubator.github.io/hpc-intro/)
+- [Official Slurm documentation](https://slurm.schedmd.com/documentation.html)  
 
 ### Running LLM workloads on HPC
-- [Accelerate](https://huggingface.co/docs/accelerate/index) — This Hugging Face Accelerate documentation provides a practical guide to scaling PyTorch-based workflows from local machines to distributed environments such as multi-GPU servers, cloud instances, or HPC clusters. It introduces a lightweight abstraction (`Accelerator`) that allows researchers to run the same code across different hardware setups with minimal changes, while handling device placement, parallelism, and mixed precision under the hood. The documentation also includes a range of tutorials and how-to guides covering both beginner and advanced topics for training and inference, such as the [Distributed Data Parallel tutorial](https://pytorch.org/tutorials/intermediate/ddp_tutorial.html) and [DeepSpeed integration](https://huggingface.co/docs/accelerate/usage_guides/deepspeed).
-- [vLLM](https://docs.vllm.ai/en/latest/) — library for scalable LLM inference (often used on HPC clusters)  
+- [Accelerate](https://huggingface.co/docs/accelerate/index): This Hugging Face Accelerate documentation provides a practical guide to scaling PyTorch-based workflows from local machines to distributed environments such as multi-GPU servers, cloud instances, or HPC clusters. It introduces a lightweight abstraction (`Accelerator`) that allows researchers to run the same code across different hardware setups with minimal changes, while handling device placement, parallelism, and mixed precision under the hood. The documentation also includes a range of tutorials and how-to guides covering both beginner and advanced topics for training and inference, such as the [Distributed Data Parallel tutorial](https://pytorch.org/tutorials/intermediate/ddp_tutorial.html) and [DeepSpeed integration](https://huggingface.co/docs/accelerate/usage_guides/deepspeed).
+- [vLLM](https://docs.vllm.ai/en/latest/): library for scalable LLM inference (often used on HPC clusters)  
 
 ### Environment management and reproducibility
-- [docker](https://docs.docker.com/) — containerization for consistent environments  
-- [apptainer](https://apptainer.org/docs/) — HPC-friendly containers (formerly Singularity)  
+- [docker](https://docs.docker.com/): containerization for consistent environments  
+- [apptainer](https://apptainer.org/docs/): HPC-friendly containers (formerly Singularity)  
 
 ### HPC knowledge bases
 - [HPC-Wiki](https://hpc-wiki.info/hpc/) 

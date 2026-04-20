@@ -40,17 +40,17 @@ Depending on the setup:
 
 ### Virtual machines (VMs)
 
-- [Exoscale](https://www.exoscale.com/) — European cloud provider with VM instances  
-- [AWS EC2](https://aws.amazon.com/ec2/) — on-demand cloud virtual machines  
-- [Google Cloud Compute Engine](https://cloud.google.com/compute) — scalable VM infrastructure  
-- [Microsoft Azure Virtual Machines](https://azure.microsoft.com/en-us/services/virtual-machines/) — enterprise cloud VM platform  
+- [Exoscale](https://www.exoscale.com/): European cloud provider with VM instances  
+- [AWS EC2](https://aws.amazon.com/ec2/): on-demand cloud virtual machines  
+- [Google Cloud Compute Engine](https://cloud.google.com/compute): scalable VM infrastructure  
+- [Microsoft Azure Virtual Machines](https://azure.microsoft.com/en-us/services/virtual-machines/): enterprise cloud VM platform  
 
 ### Virtual Research Environments (VREs)
 
-- [Google Colab](https://colab.research.google.com/) — managed notebook environment (free tier with limitations)  
-- Azure ML notebooks — managed notebook environments within Azure  
-- [JupyterHub](https://jupyter.org/hub) — institution-hosted multi-user notebook server  
-- [Binder](https://mybinder.org/) — temporary environments (no GPU, limited for LLM use)  
+- [Google Colab](https://colab.research.google.com/): managed notebook environment (free tier with limitations)  
+- Azure ML notebooks: managed notebook environments within Azure  
+- [JupyterHub](https://jupyter.org/hub): institution-hosted multi-user notebook server  
+- [Binder](https://mybinder.org/): temporary environments (no GPU, limited for LLM use)  
 - Institution-provided notebook environments (see [INSTITUTIONAL RESOURCES/Remote deployment](../institutional-resources/remote-deployment.md))  
 
 ### VM versus VRE: key difference
@@ -93,5 +93,5 @@ Depending on the setup:
 ---
 
 ## Learning resources
-- [SSH tutorial by DigitalOcean](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys) — practical SSH basics  
-- [vLLM documentation](https://docs.vllm.ai/en/stable/) — scalable inference on remote GPUs
+- [SSH tutorial by DigitalOcean](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys): practical SSH basics  
+- [vLLM documentation](https://docs.vllm.ai/en/stable/): scalable inference on remote GPUs

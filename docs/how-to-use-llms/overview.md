@@ -7,7 +7,7 @@ Researchers can use LLMs through several pathways. These pathways differ in two 
 
 The practical spectrum is:
 
-**chat -> dashboards -> APIs -> local deployment -> remote deployment -> HPC**
+> **chat -> dashboards -> APIs -> local deployment -> remote deployment -> HPC**
 
 Moving right usually increases control and complexity.
 
