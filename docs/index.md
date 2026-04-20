@@ -29,7 +29,7 @@ It is written for mixed audiences:
 
 ## Chapters
 
-### How to use LLMs in research
+### [How to use LLMs in research](./how-to-use-llms/overview.md)
 Focuses on usage modes: chat, dashboards, APIs, local deployments, remote deployments, and HPC.
 
 For each usage mode, the following topics are addressed.
@@ -50,9 +50,7 @@ For each usage mode, the following topics are addressed.
 
 - **Learning resources**
 
---- 
-
-### Institutional resources
+### [Institutional resources](./institutional-resources/overview.md)
 Focuses on context in the Netherlands: university services, SURF infrastructure, and access models.
 
 For each usage mode, the following topics are addressed.
@@ -63,9 +61,7 @@ For each usage mode, the following topics are addressed.
 
 - **Concrete examples (tools/platforms)**
 
---- 
-
-### Governance
+### [Governance](./governance/overview.md)
 Focuses on aspects of data and privacy governance on the use of LLMs at Dutch Universities and on the national and EU levels. 
 
 <!-- #### Glossary
