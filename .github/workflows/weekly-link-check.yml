@@ -1,4 +1,5 @@
 name: Weekly External Link Check
+run-name: Weekly External Link Check (${{ github.event_name }})
 
 on:
   schedule:
