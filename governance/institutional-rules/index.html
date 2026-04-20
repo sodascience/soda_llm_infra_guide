@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Institutional rules - Guide to LLM Computing Infrastructure in the Netherlands</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Practical guidance for researchers on using LLMs and institutional infrastructure in the Netherlands.">
+<meta name="generator" content="mkdocs-1.6.1, mkdocs-gitbook-1.0.7">
+
+<link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta rel="next" href="" />
+<link href="../../css/style.min.css" rel="stylesheet">
+<link href="../../stylesheets/search-fix.css" rel="stylesheet"> 
+</head>
+
+<body>
+<div class="book">
+<div class="book-summary">
+
+<nav role="navigation">
+<ul class="summary">
+<li>
+<a href="../.." target="_blank" class="custom-link">Guide to LLM Computing Infrastructure in the Netherlands</a>
+</li>
+<li class="divider"></li>
+<li class="chapter" data-path="">
+<a href="../..">Home</a>
+<li class="header">How to use LLMs in research</li>
+
+<li>
+<a href="../../how-to-use-llms/overview/" class="">Overview</a>
+</li>
+
+<li>
+<a href="../../how-to-use-llms/chat-interface/" class="">Chat interface</a>
+</li>
+
+<li>
+<a href="../../how-to-use-llms/llm-dashboards/" class="">LLM dashboards</a>
+</li>
+
+<li>
+<a href="../../how-to-use-llms/apis/" class="">APIs</a>
+</li>
+
+<li>
+<a href="../../how-to-use-llms/local-deployment/" class="">Local deployment</a>
+</li>
+
+<li>
+<a href="../../how-to-use-llms/remote-deployment/" class="">Remote deployment</a>
+</li>
+
+<li>
+<a href="../../how-to-use-llms/hpc/" class="">HPC</a>
+</li>
+
+<li class="header">Institutional resources</li>
+
+<li>
+<a href="../../institutional-resources/overview/" class="">Overview</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/chat-interface/" class="">Chat interface</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/apis/" class="">APIs</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/remote-deployment/" class="">Remote deployment</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/hpc/" class="">HPC</a>
+</li>
+
+<li class="header">Governance</li>
+
+<li>
+<a href="../governance.md" class="">Governance</a>
+</li>
+
+<li class="divider"></li>
+
+
+
+<li><a href="http://www.mkdocs.org">
+Published with MkDocs
+</a></li>
+
+<li><a href="https://github.com/GitbookIO/theme-default">
+Theme by GitBook
+</a></li>
+</ul>
+
+</nav>
+
+</div> <!-- end of book-summary -->
+
+<div class="book-body">
+<div class="body-inner">
+<div class="book-header" role="navigation">
+
+<!-- Title -->
+<h1>
+<i class="fa fa-circle-o-notch fa-spin"></i>
+<a href="." ></a>
+</h1>
+
+</div> <!-- end of book-header -->
+
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="page-inner">
+
+<section class="normal markdown-section">
+
+
+
+<h1 id="institutional-rules">Institutional rules</h1>
+<h2 id="why-this-matters">Why this matters</h2>
+<p>Universities and research institutions increasingly provide guidance on the use of LLMs. These rules are designed to:</p>
+<ul>
+<li>protect sensitive data  </li>
+<li>ensure compliance with privacy and legal requirements  </li>
+<li>manage risks related to external AI providers  </li>
+<li>support responsible and reproducible research  </li>
+</ul>
+<p>Because policies differ across institutions, <strong>you should always check local guidance before using LLMs in your work</strong>.</p>
+<hr />
+<h2 id="what-institutions-typically-regulate">What institutions typically regulate</h2>
+<h3 id="data-usage">Data usage</h3>
+<p>Most institutions restrict how you can use LLMs with:</p>
+<ul>
+<li>personal data  </li>
+<li>sensitive or confidential information  </li>
+<li>restricted datasets (e.g., administrative or contractual data)  </li>
+</ul>
+<p>In many cases:
+- public LLM tools are <strong>not allowed</strong> for sensitive data<br />
+- institutional tools or secure environments are required  </p>
+<h3 id="use-of-external-services">Use of external services</h3>
+<p>Public LLM providers (e.g., chat tools and APIs) may:</p>
+<ul>
+<li>process data outside your institution  </li>
+<li>store or log interactions  </li>
+<li>operate under different legal frameworks  </li>
+</ul>
+<p>Institutions may:
+- discourage or prohibit their use for certain data<br />
+- require approved alternatives  </p>
+<hr />
+<h3 id="approved-tools">Approved tools</h3>
+<p>Some institutions provide or recommend:</p>
+<ul>
+<li>institutional chat interfaces  </li>
+<li>approved API access  </li>
+<li>controlled compute environments (VMs, VREs, HPC)  </li>
+</ul>
+<p>These are typically:
+- safer<br />
+- better aligned with institutional policies<br />
+- preferred for research use  </p>
+<hr />
+<h3 id="logging-and-monitoring">Logging and monitoring</h3>
+<p>Institutional systems may:</p>
+<ul>
+<li>log usage  </li>
+<li>track access  </li>
+<li>enforce quotas or limits  </li>
+</ul>
+<p>This supports:
+- accountability<br />
+- security<br />
+- cost management  </p>
+<hr />
+<h3 id="research-practices">Research practices</h3>
+<p>Some institutions provide guidance on:</p>
+<ul>
+<li>documenting LLM usage in research  </li>
+<li>disclosing tools in publications  </li>
+<li>ensuring reproducibility  </li>
+<li>avoiding over-reliance on generated outputs  </li>
+</ul>
+<hr />
+<h2 id="what-you-should-do-in-practice">What you should do in practice</h2>
+<h3 id="before-using-an-llm">Before using an LLM</h3>
+<ul>
+<li>Check your institution’s AI or data policy  </li>
+<li>Determine whether your data is sensitive  </li>
+<li>Identify approved tools or services  </li>
+</ul>
+<h3 id="during-use">During use</h3>
+<ul>
+<li>Use institutional tools when available  </li>
+<li>Avoid sharing sensitive data with public tools  </li>
+<li>Follow recommended workflows and environments  </li>
+</ul>
+<h3 id="after-use">After use</h3>
+<ul>
+<li>Document which tools and models were used  </li>
+<li>Record prompts or workflows where relevant  </li>
+<li>Validate outputs against source material  </li>
+</ul>
+<hr />
+<h2 id="where-to-find-guidance">Where to find guidance</h2>
+<h3 id="universities">Universities</h3>
+<p>Below is a curated list of Dutch universities and institutions with publicly available AI / LLM-related guidance on research and/or education. Availability and level of detail vary, and pages may change frequently.</p>
+<ul>
+<li><a href="https://www.uva.nl/en/about-the-uva/about-the-university/ai/ai-policy/vision-on-ai.html">University of Amsterdam (UvA)</a><ul>
+<li><a href="https://www.uva.nl/en/about-the-uva/policy-and-regulations/education/policy-framework-and-guidelines-on-genai-in-education.html">Education</a></li>
+</ul>
+</li>
+<li><a href="https://www.uu.nl/en/organisation/ai-policy">Utrecht University</a><ul>
+<li><a href="https://www.uu.nl/en/research/data-science-and-artificial-intelligence/research/generative-ai-in-research">Research</a></li>
+<li><a href="https://www.uu.nl/en/organisation/ai-policy/teachers">Education</a></li>
+</ul>
+</li>
+<li>Leiden University<ul>
+<li><a href="https://www.staff.universiteitleiden.nl/security/information-security-and-privacy/working-securely-online/working-with-ai">Research</a></li>
+<li><a href="https://www.staff.universiteitleiden.nl/education/it-and-education/ai-in-education">Education</a></li>
+</ul>
+</li>
+<li>TU Delft<ul>
+<li><a href="https://www.tudelft.nl/teaching-support/educational-advice/assess/guidelines/ai-chatbots-in-unsupervised-assessment">Education</a></li>
+</ul>
+</li>
+<li>Vrije Universiteit Amsterdam<ul>
+<li><a href="https://vu.nl/en/research/more-about/research-and-ai">Research</a></li>
+<li><a href="https://vu.nl/en/student/examinations/generative-ai-your-use-our-expectations">Education</a></li>
+</ul>
+</li>
+<li>Eindhoven University of Technology<ul>
+<li><a href="https://www.tueindhoven.ai/education/guidelines/index.html">Education</a>  </li>
+</ul>
+</li>
+<li><a href="https://www.rug.nl/society-business/center-for-information-technology/services/ai-office/beleid-en-regelgeving/?lang=en">University of Groningen</a>  <ul>
+<li><a href="https://www.rug.nl/about-ug/organization/quality-assurance/education/artificial-intelligence-ai/">Education</a></li>
+</ul>
+</li>
+<li>Wageningen University<ul>
+<li><a href="https://support.wur.nl/esc?id=kb_article&amp;sysparm_article=KB0015363">Copyright</a></li>
+<li><a href="https://support.wur.nl/esc?id=kb_article&amp;sysparm_article=KB0016528">Literature search &amp; screening</a></li>
+<li><a href="https://wur-studentsupport.screenstepslive.com/m/118226">Education</a></li>
+</ul>
+</li>
+<li>Radboud University<ul>
+<li><a href="https://www.ru.nl/en/services/campus-facilities-buildings/ict/responsible-engagement-with-genai-in-9-rules">Research</a></li>
+<li><a href="https://www.ru.nl/en/staff/lecturers/designing-education/ai-in-education">Education</a></li>
+</ul>
+</li>
+<li>Tilburg University<ul>
+<li><a href="https://www.tilburguniversity.edu/about/conduct-and-integrity/privacy-and-security/artificial-intelligence">Research</a></li>
+<li><a href="https://www.tilburguniversity.edu/sites/default/files/download/AI%20in%20Education%20-%20Factsheet_0.pdf">Education</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="national-sector-organisations">National / sector organisations</h3>
+<ul>
+<li><a href="https://www.autoriteitpersoonsgegevens.nl/en/themes/algorithms-ai">Autoriteit Persoonsgegevens: AI and algorithms</a>: Dutch Data Protection Authority guidance on AI and privacy </li>
+<li><a href="https://www.autoriteitpersoonsgegevens.nl/en/documents/gdpr-preconditions-for-generative-ai">GDPR preconditions for generative AI</a>: Practical conditions for using generative AI systems   </li>
+<li><a href="https://npuls.nl/edugenai">Npuls / EduGenAI</a> — sector-wide initiative for responsible AI use in education  </li>
+<li><a href="https://www.surf.nl/en/themes/artificial-intelligence">SURF AI and data guidance</a></li>
+</ul>
+<h3 id="european-union">European Union</h3>
+<ul>
+<li><a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">EU AI Act</a> — Overview of the EU’s regulatory framework for artificial intelligence  </li>
+<li><a href="https://commission.europa.eu/law/law-topic/data-protection/data-protection-eu_en">GDPR overview (European Commission)</a> — Core data protection framework governing personal data use  </li>
+</ul>
+<hr />
+<h2 id="important-note">Important note</h2>
+<blockquote>
+<p>Institutional policies evolve quickly. Always consult the latest official guidance from your university or research organization.</p>
+</blockquote>
+<hr />
+<h2 id="summary">Summary</h2>
+<ul>
+<li>Institutional rules vary, but focus on <strong>data protection, tool usage, and responsible research</strong>  </li>
+<li>Public LLM tools are often restricted for sensitive data  </li>
+<li>Institutional tools and infrastructure are usually preferred  </li>
+<li>When in doubt, check local guidance or ask for support  </li>
+</ul>
+
+
+</section>
+
+</div> <!-- end of page-inner -->
+</div> <!-- end of page-wrapper -->
+
+</div> <!-- end of body-inner -->
+
+</div> <!-- end of book-body -->
+<script src="../../js/main.js"></script>
+<script src="../../js/gitbook.min.js"></script>
+<script src="../../js/theme.min.js"></script>
+</body>
+</html>

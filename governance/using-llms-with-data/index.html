@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Using LLMs with your data - Guide to LLM Computing Infrastructure in the Netherlands</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Practical guidance for researchers on using LLMs and institutional infrastructure in the Netherlands.">
+<meta name="generator" content="mkdocs-1.6.1, mkdocs-gitbook-1.0.7">
+
+<link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta rel="next" href="" />
+<link href="../../css/style.min.css" rel="stylesheet">
+<link href="../../stylesheets/search-fix.css" rel="stylesheet"> 
+</head>
+
+<body>
+<div class="book">
+<div class="book-summary">
+
+<nav role="navigation">
+<ul class="summary">
+<li>
+<a href="../.." target="_blank" class="custom-link">Guide to LLM Computing Infrastructure in the Netherlands</a>
+</li>
+<li class="divider"></li>
+<li class="chapter" data-path="">
+<a href="../..">Home</a>
+<li class="header">How to use LLMs in research</li>
+
+<li>
+<a href="../../how-to-use-llms/overview/" class="">Overview</a>
+</li>
+
+<li>
+<a href="../../how-to-use-llms/chat-interface/" class="">Chat interface</a>
+</li>
+
+<li>
+<a href="../../how-to-use-llms/llm-dashboards/" class="">LLM dashboards</a>
+</li>
+
+<li>
+<a href="../../how-to-use-llms/apis/" class="">APIs</a>
+</li>
+
+<li>
+<a href="../../how-to-use-llms/local-deployment/" class="">Local deployment</a>
+</li>
+
+<li>
+<a href="../../how-to-use-llms/remote-deployment/" class="">Remote deployment</a>
+</li>
+
+<li>
+<a href="../../how-to-use-llms/hpc/" class="">HPC</a>
+</li>
+
+<li class="header">Institutional resources</li>
+
+<li>
+<a href="../../institutional-resources/overview/" class="">Overview</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/chat-interface/" class="">Chat interface</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/apis/" class="">APIs</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/remote-deployment/" class="">Remote deployment</a>
+</li>
+
+<li>
+<a href="../../institutional-resources/hpc/" class="">HPC</a>
+</li>
+
+<li class="header">Governance</li>
+
+<li>
+<a href="../governance.md" class="">Governance</a>
+</li>
+
+<li class="divider"></li>
+
+
+
+<li><a href="http://www.mkdocs.org">
+Published with MkDocs
+</a></li>
+
+<li><a href="https://github.com/GitbookIO/theme-default">
+Theme by GitBook
+</a></li>
+</ul>
+
+</nav>
+
+</div> <!-- end of book-summary -->
+
+<div class="book-body">
+<div class="body-inner">
+<div class="book-header" role="navigation">
+
+<!-- Title -->
+<h1>
+<i class="fa fa-circle-o-notch fa-spin"></i>
+<a href="." ></a>
+</h1>
+
+</div> <!-- end of book-header -->
+
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="page-inner">
+
+<section class="normal markdown-section">
+
+
+
+<h1 id="using-llms-with-your-data">Using LLMs with your data</h1>
+<h2 id="why-this-matters">Why this matters</h2>
+<p>Large language models (LLMs) process the text you provide. Depending on the tool you use, that data may:</p>
+<ul>
+<li>be sent to external providers  </li>
+<li>be logged or stored  </li>
+<li>be used for monitoring or improvement  </li>
+<li>leave your institutional environment  </li>
+</ul>
+<p>Choosing the wrong setup can lead to <strong>privacy risks, policy violations, or loss of control over your data</strong>.</p>
+<hr />
+<h2 id="key-question">Key question</h2>
+<blockquote>
+<p>Can I use this LLM setup with my data?</p>
+</blockquote>
+<p>The answer depends on <strong>what data you have</strong> and <strong>which tool you use</strong>.</p>
+<hr />
+<h2 id="step-1-classify-your-data">Step 1: Classify your data</h2>
+<h3 id="low-risk-data-generally-safe">🟢 Low-risk data (generally safe)</h3>
+<ul>
+<li>Publicly available text  </li>
+<li>Published open-access papers  </li>
+<li>Synthetic or generated data  </li>
+<li>Non-sensitive notes or drafts  </li>
+</ul>
+<p>Typically safe to use with any LLM usage mode.</p>
+<hr />
+<h3 id="medium-risk-data-use-caution">🟡 Medium-risk data (use caution)</h3>
+<ul>
+<li>Internal documents  </li>
+<li>Unpublished research  </li>
+<li>Draft manuscripts  </li>
+<li>Project notes or meeting summaries  </li>
+</ul>
+<p>Recommended:
+- institutional tools (chat/API)<br />
+- controlled environments (VM/VRE/HPC)  </p>
+<p>Avoid:
+- pasting into public tools without checking policies  </p>
+<hr />
+<h3 id="high-risk-data-restricted">🔴 High-risk data (restricted)</h3>
+<ul>
+<li>Personal data (e.g., names, emails, identifiable individuals)  </li>
+<li>Sensitive personal data (e.g., health, political views)  </li>
+<li>Confidential or proprietary data  </li>
+<li>Restricted datasets (e.g., administrative data such as CBS data)  </li>
+</ul>
+<p>Do NOT use:
+- public chat tools<br />
+- public APIs  </p>
+<p>Use instead:
+- institutional infrastructure<br />
+- secure environments<br />
+- HPC or controlled research platforms  </p>
+<hr />
+<h2 id="step-2-understand-the-tool-you-are-using">Step 2 — Understand the tool you are using</h2>
+<h3 id="public-chat-tools">Public chat tools</h3>
+<p>(e.g., ChatGPT-style interfaces)</p>
+<ul>
+<li>Easy to use  </li>
+<li>Data may leave your institution  </li>
+<li>Limited control  </li>
+</ul>
+<p>Use only for low-risk data  </p>
+<hr />
+<h3 id="public-apis">Public APIs</h3>
+<p>(e.g., OpenAI-style APIs)</p>
+<ul>
+<li>Programmatic access  </li>
+<li>More control than chat tools  </li>
+<li>Still external providers  </li>
+</ul>
+<p>Suitable for low- to medium-risk data (if allowed)  </p>
+<hr />
+<h3 id="institutional-tools-chatapi">Institutional tools (chat/API)</h3>
+<ul>
+<li>Provided or approved by your university or SURF  </li>
+<li>Governed usage and access  </li>
+<li>Often preferred for research  </li>
+</ul>
+<p>Suitable for:
+- medium-risk data<br />
+- sometimes higher-risk data (depending on setup)  </p>
+<hr />
+<h3 id="remote-environments-vms-vres">Remote environments (VMs / VREs)</h3>
+<ul>
+<li>More control over environment  </li>
+<li>Data handling depends on provider  </li>
+<li>Can be configured for privacy  </li>
+</ul>
+<p>Suitable for:
+- medium-risk data<br />
+- some sensitive data (if properly configured)  </p>
+<hr />
+<h3 id="hpc-secure-environments">HPC / secure environments</h3>
+<ul>
+<li>Strict access control  </li>
+<li>Data stays within controlled infrastructure  </li>
+<li>Designed for sensitive or large-scale workloads  </li>
+</ul>
+<p>Required for:
+- high-risk or restricted data  </p>
+<hr />
+<h2 id="rule-of-thumb">Rule of thumb</h2>
+<blockquote>
+<p>If you would not email the data to an external service, do not share it with a public LLM (including APIs).</p>
+</blockquote>
+<hr />
+<h2 id="common-mistakes">Common mistakes</h2>
+<ul>
+<li>Copy-pasting sensitive data into public chat tools  </li>
+<li>Assuming “research use” automatically allows data sharing  </li>
+<li>Ignoring institutional policies  </li>
+<li>Using APIs without checking where data is processed  </li>
+<li>Forgetting to log or document LLM usage  </li>
+</ul>
+<hr />
+<h2 id="good-practices">Good practices</h2>
+<ul>
+<li>Check your institution’s AI or data policy  </li>
+<li>Prefer institutional tools when available  </li>
+<li>Use local or controlled environments for sensitive work  </li>
+<li>Remove or anonymize personal data where possible  </li>
+<li>Keep track of:</li>
+<li>model used  </li>
+<li>prompts  </li>
+<li>parameters  </li>
+<li>Validate outputs against original data  </li>
+</ul>
+<hr />
+<h2 id="when-in-doubt">When in doubt</h2>
+<p>If you are unsure:</p>
+<ul>
+<li>Contact your research support or IT services  </li>
+<li>Check institutional AI guidance  </li>
+<li>Use a more restrictive setup (e.g., institutional or local)  </li>
+</ul>
+<hr />
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Data type</th>
+<th>Recommended tools</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Low-risk</td>
+<td>Any (chat, API, local, remote)</td>
+</tr>
+<tr>
+<td>Medium-risk</td>
+<td>Institutional tools, VMs/VREs</td>
+</tr>
+<tr>
+<td>High-risk</td>
+<td>HPC, secure environments only</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+</div> <!-- end of page-inner -->
+</div> <!-- end of page-wrapper -->
+
+</div> <!-- end of body-inner -->
+
+</div> <!-- end of book-body -->
+<script src="../../js/main.js"></script>
+<script src="../../js/gitbook.min.js"></script>
+<script src="../../js/theme.min.js"></script>
+</body>
+</html>
