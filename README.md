@@ -58,3 +58,11 @@ External URL monitoring is handled by a separate workflow: **Weekly External Lin
 - Recovery behavior: if links are clean again, the workflow comments and closes that issue
 
 This link-check workflow is intentionally independent from deployment, so publishing is not blocked by transient external link failures.
+
+## Contact
+
+This project is developed and maintained by the [ODISSEI Social Data Science (SoDa)](https://odissei-soda.nl/) team.
+
+<img src="img/soda_logo.png" alt="SoDa logo" width="250px"/>
+
+Do you have questions, suggestions, or remarks? File an [issue](https://github.com/sodascience/soda_llm_infra_guide/issues) or feel free to contact [Qixiang Fang](https://github.com/fqixiang) directly.
