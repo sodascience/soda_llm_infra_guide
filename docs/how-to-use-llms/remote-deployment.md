@@ -42,8 +42,8 @@ Depending on the setup:
 
 - [Exoscale](https://www.exoscale.com/): European cloud provider with VM instances  
 - [AWS EC2](https://aws.amazon.com/ec2/): on-demand cloud virtual machines  
-- [Google Cloud Compute Engine](https://cloud.google.com/compute): scalable VM infrastructure  
-- [Microsoft Azure Virtual Machines](https://azure.microsoft.com/en-us/services/virtual-machines/): enterprise cloud VM platform  
+- [Google Cloud Compute Engine](https://cloud.google.com/products/compute): scalable VM infrastructure  
+- [Microsoft Azure Virtual Machines](https://azure.microsoft.com/en-us/products/virtual-machines/): enterprise cloud VM platform  
 
 ### Virtual Research Environments (VREs)
 

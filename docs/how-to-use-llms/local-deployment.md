@@ -36,10 +36,10 @@ You install a local inference runtime, download model weights, and run prompts d
 - User-friendly local LLM apps
     - [Ollama](https://ollama.com/): easy-to-use local LLM runtime with chat + API interface  
     - [LM Studio](https://lmstudio.ai/): desktop app for running and chatting with local models  
-    - [Jan.ai](https://jan.ai/)： open-source local AI assistant with privacy focus  
+    - [Jan.ai](https://www.jan.ai/)： open-source local AI assistant with privacy focus  
 
 - Inference engines (core runtime layer)
-    - [llama.cpp](https://github.com/ggerganov/llama.cpp)： efficient C++ inference engine for running quantized models locally  
+    - [llama.cpp](https://github.com/ggml-org/llama.cpp)： efficient C++ inference engine for running quantized models locally  
     - [vLLM](https://github.com/vllm-project/vllm)： high-performance inference engine for serving LLMs
     - [Text Generation Inference](https://github.com/huggingface/text-generation-inference): production-ready LLM inference server
 
@@ -71,13 +71,13 @@ You install a local inference runtime, download model weights, and run prompts d
 
 ## Learning resources
 ### Getting started (quick local setup)
-- [Ollama docs](https://ollama.com/docs): beginner-friendly way to run and manage LLMs locally  
-- [llama.cpp](https://github.com/ggerganov/llama.cpp): practical guide and examples for running LLMs locally (CPU/GPU, quantization)  
+- [Ollama docs](https://docs.ollama.com/): beginner-friendly way to run and manage LLMs locally  
+- [llama.cpp](https://github.com/ggml-org/llama.cpp): practical guide and examples for running LLMs locally (CPU/GPU, quantization)  
 
 ### Research workflows (core libraries)
 - [Hugging Face Transformers docs](https://huggingface.co/docs/transformers/index): load models, run inference, build pipelines  
 - [Hugging Face Accelerate](https://github.com/huggingface/accelerate): manage CPU/GPU and multi-device setups  
-- [Microsoft Guidance](https://github.com/microsoft/guidance): structured prompting and controlled generation
+- [Microsoft Guidance](https://github.com/guidance-ai/guidance): structured prompting and controlled generation
 
 ### Serving & scaling (API-style deployment)
 - [vLLM docs](https://docs.vllm.ai/en/stable/): high-performance inference engine for scalable deployment  
@@ -89,5 +89,5 @@ You install a local inference runtime, download model weights, and run prompts d
 - [QLoRA](https://github.com/artidoro/qlora): fine-tune large models on limited hardware  
 
 ### Learning & fundamentals
-- [DeepLearning.AI: Open-Source Models with Hugging Face](https://www.deeplearning.ai/short-courses/open-source-models-hugging-face/): structured course on using open models locally  
+- [DeepLearning.AI: Open-Source Models with Hugging Face](https://www.deeplearning.ai/courses/open-source-models-hugging-face/): structured course on using open models locally  
 - [llm.c](https://github.com/karpathy/llm.c): minimal implementation for understanding LLM internals  

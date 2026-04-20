@@ -63,4 +63,4 @@ A dashboard lets you define prompts, variables, and test cases through forms and
 
 ## Learning resources
 - [ChainForge documentation](https://www.chainforge.ai/docs/)
-- [Langfuse Playground documentation](https://docs.langfuse.com/playground)
+- [Langfuse Playground documentation](https://langfuse.com/docs/prompt-management/features/playground)

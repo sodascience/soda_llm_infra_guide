@@ -24,16 +24,16 @@ You obtain project access and then submit jobs to shared cluster resources. Sche
 
     - [Eindhoven University of Technology – TU/e Supercomputing Center](https://supercomputing.tue.nl)  
 
-    - [Tilburg University – Blade cluster](https://www.tilburguniversity.edu/research/economics-and-management/graduate-school/phd-business/research-facilities)  
+    - [Tilburg University – Blade cluster](https://www.tilburguniversity.edu/research/economics-and-management/research-facilities)  
 
     - [Wageningen University & Research – Anunna](https://researchequipment.wur.nl/device/miscellaneous-misc/high-performance-computing-cluster-hpc-anunna)  
 
     - [Utrecht University](https://www.uu.nl/en/research/research-data-management/tools/software-and-computing/high-performance-and-cloud-computing)  
 
-    - [University of Groningen – Hábrók cluster](https://www.rug.nl/society-business/centre-for-information-technology/research/services/hpc/facilities/habrok-hpc-cluster?lang=en)  
+    - [University of Groningen – Hábrók cluster](https://www.rug.nl/society-business/center-for-information-technology/research/services/hpc/habrok?lang=en)  
 
     - [Leiden University – ALICE cluster](https://www.universiteitleiden.nl/en/research/research-facilities/alice-leiden-computer-cluster)  
 
-    - [Vrije Universiteit Amsterdam – ADA cluster](https://ada-hpc.readthedocs.io/en/latest/)  
+    - [Vrije Universiteit Amsterdam – ADA cluster](https://rdm.vu.nl/manuals/ada/)  
 
 - [SURF Grid infrastructure](https://www.surf.nl/en/which-service-for-which-research-question): A distributed computing system for large-scale, loosely coupled workloads.

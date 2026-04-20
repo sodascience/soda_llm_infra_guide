@@ -34,8 +34,8 @@ Your code sends structured input (prompt, parameters, optional context) to an AP
 
 - Provider APIs (commercial or institutional). For example:
     - [OpenAI API](https://developers.openai.com/api/docs) for GPT models
-    - [Claude API](https://docs.anthropic.com/claude/reference/getting-started) for Anthropic models
-    - [Gemini API](https://ai.google.dev/gemini-api) for Google models
+    - [Claude API](https://platform.claude.com/docs/en/api/overview) for Anthropic models
+    - [Gemini API](https://ai.google.dev/gemini-api/docs) for Google models
 - API client libraries in Python, R, or other languages. These libraries simplify the process of sending requests and handling responses. For example:
     - [LangChain](https://www.langchain.com/) in Python for pipeline orchestration
     - [ellmer](https://ellmer.tidyverse.org/) in R for conversational and prompt workflows in data science contexts
