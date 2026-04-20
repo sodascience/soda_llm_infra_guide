@@ -10,36 +10,27 @@ You obtain project access, then submit jobs to shared cluster resources. Schedul
 
 ## Concrete examples (tools/platforms)
 
-- University HPC clusters
-- Snellius (SURF national supercomputer)
-- Slurm-based scheduling environments
+- [SURF – Snellius (national supercomputer)](https://www.surf.nl/en/services/compute/snellius-the-national-supercomputer): The Dutch national flagship HPC system. 
 
-## Example workflow (step-by-step)
+- [LUMI](https://lumi-supercomputer.eu/about-lumi/)  
+  European pre-exascale supercomputer accessible to Dutch researchers [via SURF](https://www.surf.nl/en/services/compute/lumi).
 
-1. Assess whether your workload justifies HPC scale.
-2. Discuss options with local research support or HPC coordinators.
-3. Apply for access (institutional pathway, project request, or grant-linked process).
-4. Prepare reproducible batch scripts and environments.
-5. Run pilot jobs, then scale to larger batches.
-6. Monitor quotas, storage, and queue behavior to plan efficiently.
+- University-supported HPC clusters
+    - [TU Delft – DelftBlue](https://www.tudelft.nl/dhpc/system)
 
-## When to scale up to Snellius or similar national resources
+    - [Eindhoven University of Technology – TU/e Supercomputing Center](https://supercomputing.tue.nl)
 
-- Local university cluster capacity is insufficient
-- Multi-GPU or high-memory jobs exceed local limits
-- Project timelines require large parallel throughput
-- National support and shared expertise offer better fit
+    - [Tilburg University – Blade cluster](https://www.tilburguniversity.edu/research/economics-and-management/graduate-school/phd-business/research-facilities)
 
-## How access works (grants, quotas)
+    - [Wageningen University & Research – Anunna](https://researchequipment.wur.nl/device/miscellaneous-misc/high-performance-computing-cluster-hpc-anunna)  
 
-- Access often combines institutional entitlement and project-level allocation.
-- Some pathways are quota-based; others depend on proposal or grant mechanisms.
-- Clear planning for compute hours, storage, and expected outputs improves approval success.
+    - [Utrecht University](https://www.uu.nl/en/research/research-data-management/tools/software-and-computing/high-performance-and-cloud-computing)  
 
-## Pros and cons
+    - [University of Groningen – Hábrók cluster](https://www.rug.nl/society-business/centre-for-information-technology/research/services/hpc/facilities/habrok-hpc-cluster?lang=en)  
 
-| Pros | Cons |
-|---|---|
-| Enables national-scale compute and advanced workloads | Onboarding and queue systems require learning |
-| Better fit for large or long-running experiments | Access can depend on quotas or proposal cycles |
-| Strong support ecosystem in Dutch research infrastructure | Not ideal for very rapid ad hoc iteration |
+    - [Leiden University – ALICE cluster](https://www.universiteitleiden.nl/en/research/research-facilities/alice-leiden-computer-cluster) 
+
+    - [Vrije Universiteit Amsterdam – ADA cluster](https://ada-hpc.readthedocs.io/en/latest/)  
+
+
+- [SURF Grid infrastructure](https://www.surf.nl/en/which-service-for-which-research-question): Distributed computing system for large-scale, loosely coupled workloads.
