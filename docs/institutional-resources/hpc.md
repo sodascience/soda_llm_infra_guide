@@ -19,7 +19,7 @@ You obtain project access and then submit jobs to shared cluster resources. Sche
 - [LUMI](https://lumi-supercomputer.eu/about-lumi/)  
   European pre-exascale supercomputer accessible to Dutch researchers [via SURF](https://www.surf.nl/en/services/compute/lumi).  
 
-- University-supported HPC clusters  
+- **University-supported HPC clusters**  
     - [TU Delft – DelftBlue](https://www.tudelft.nl/dhpc/system)  
 
     - [Eindhoven University of Technology – TU/e Supercomputing Center](https://supercomputing.tue.nl)  

@@ -18,7 +18,7 @@ You request access to remote compute resources through your institution or SURF-
     - Apply for access through [NWO computing calls](https://www.surf.nl/en/access-to-compute-services)  
     - Direct access: available only through [certain universities](https://www.surf.nl/en/access-to-computing-and-storage-capacity-via-direct-contract)  
 
-- University-supported VMs and VREs (including both university-specific solutions and SURF Research Cloud-based solutions):  
+- **University-supported VMs and VREs** (including both university-specific solutions and SURF Research Cloud-based solutions):  
     - [Utrecht University](https://www.uu.nl/en/research/research-data-management/tools/software-and-computing/virtual-research-environments): [Workspace catalogue](https://utrechtuniversity.github.io/vre-docs/docs/workspace-catalogue.html)  
 
     - [University of Amsterdam](https://www.uva.nl/shared-content/uva/en/news/news/2023/03/virtual-research-environment-uva-wide-available.html): Access via [Research Support Portal](https://rsp.uva.nl/) (login required)  
