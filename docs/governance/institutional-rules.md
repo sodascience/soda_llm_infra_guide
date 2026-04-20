@@ -146,7 +146,7 @@ When university-specific guidance on AI and/or data is missing, consult sector a
 - [Autoriteit Persoonsgegevens: AI and algorithms](https://www.autoriteitpersoonsgegevens.nl/en/themes/algorithms-ai): Dutch Data Protection Authority guidance on AI and privacy 
 - [GDPR preconditions for generative AI](https://www.autoriteitpersoonsgegevens.nl/en/documents/gdpr-preconditions-for-generative-ai): Practical conditions for using generative AI systems   
 - [Npuls / EduGenAI](https://npuls.nl/edugenai) — sector-wide initiative for responsible AI use in education  
-- [SURF AI and data guidance](https://www.surf.nl/en/themes/artificial-intelligence)
+- [SURF AI and data guidance](https://www.surf.nl/en/themes/artificial-)
 
 ### European Union
 When in doubt, consult EU-level policies:
