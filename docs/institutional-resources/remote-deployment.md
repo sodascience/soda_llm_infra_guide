@@ -25,7 +25,7 @@ You request access to remote compute resources through your institution or SURF-
 
     - [Vrije Universiteit Amsterdam](https://rdm.vu.nl/topics/researchcloud.html)  
 
-    - [University of Groningen](https://www.rug.nl/digital-competence-centre/it-solutions/)  
+    - [University of Groningen](https://www.rug.nl/society-business/center-for-information-technology/research/services/virtual-research-workspace)  
 
     - [University of Twente](https://www.utwente.nl/en/service-portal/research-support/it-facilities-for-research-labs/virtual-research-environment-vre)  
 
