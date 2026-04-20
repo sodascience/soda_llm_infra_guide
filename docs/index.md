@@ -21,20 +21,48 @@ It is written for mixed audiences:
 
 ## How To Read This Guide
 
-1. Start with the section overviews.
+1. Start with the chapter overviews.
 2. Choose a usage mode that matches your project needs.
 3. Use the detailed pages to implement responsibly and efficiently.
 
 ---
 
-## Sections
+## Chapters
 
-### How to use LLMs in research
-Focuses on methods / usage modes: chat, dashboards, APIs, local deployments, remote deployments, and HPC.
+#### How to use LLMs in research
+> Focuses on usage modes: chat, dashboards, APIs, local deployments, remote deployments, and HPC.
 
+For each usage mode, the following topics are addressed.
 
-### Institutional resources
-Focuses on context in the Netherlands: university services, SURF infrastructure, and access models.
+- **What is this?**
 
-### Glossary
-A list of terms referred to in this infrastructure guide, with explanations. 
+- **When should you use it?**
+
+- **When should you NOT use it?**
+
+- **How it works (simple explanation)**
+
+- **Concrete examples (tools/platforms)**
+
+- **Example workflow (step-by-step)**
+
+- **Pros and cons**
+
+- **Learning resources**
+
+#### Institutional resources
+> Focuses on context in the Netherlands: university services, SURF infrastructure, and access models.
+
+For each usage mode, the following topics are addressed.
+
+- **What is this?**
+
+- **How it works (simple explanation)**
+
+- **Concrete examples (tools/platforms)**
+
+#### Governance
+> Focuses on aspects of data and privacy governance on the use of LLMs in the Netherlands/EU. 
+
+<!-- #### Glossary
+> A list of terms referred to in this infrastructure guide, with explanations.  -->
