@@ -87,7 +87,7 @@ Some institutions provide guidance on:
 
 ### Before using an LLM
 
-- Check your institution’s AI or data policy  
+- Check your institution's AI or data policy  
 - Determine whether your data is sensitive  
 - Identify approved tools or services  
 
@@ -141,7 +141,7 @@ Below is a curated list of Dutch universities and institutions with publicly ava
 ---
 
 ### National / sector organisations
-When univeristy-specific guidance on AI and/or data is missing, consult sector and national policies. 
+When university-specific guidance on AI and/or data is missing, consult sector and national policies. 
 
 - [Autoriteit Persoonsgegevens: AI and algorithms](https://www.autoriteitpersoonsgegevens.nl/en/themes/algorithms-ai): Dutch Data Protection Authority guidance on AI and privacy 
 - [GDPR preconditions for generative AI](https://www.autoriteitpersoonsgegevens.nl/en/documents/gdpr-preconditions-for-generative-ai): Practical conditions for using generative AI systems   
@@ -151,7 +151,7 @@ When univeristy-specific guidance on AI and/or data is missing, consult sector a
 ### European Union
 When in doubt, consult EU-level policies:
 
-- [EU AI Act](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai) — Overview of the EU’s regulatory framework for artificial intelligence  
+- [EU AI Act](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai) — Overview of the EU's regulatory framework for artificial intelligence  
 - [GDPR overview (European Commission)](https://commission.europa.eu/law/law-topic/data-protection/data-protection-eu_en) — Core data protection framework governing personal data use  
 
 ---
@@ -167,4 +167,4 @@ When in doubt, consult EU-level policies:
 - Institutional rules vary, but focus on **data protection, tool usage, and responsible research**  
 - Public LLM tools are often restricted for sensitive data  
 - Institutional tools and infrastructure are usually preferred  
-- When in doubt, check local guidance or ask for support  
+- When in doubt, check local guidance or ask for support
