@@ -108,7 +108,6 @@ Some institutions provide guidance on:
 ## Where to find guidance
 
 ### Universities
-
 Below is a curated list of Dutch universities and institutions with publicly available AI / LLM-related guidance on research and/or education. Availability and level of detail vary, and pages may change frequently.
 
 - [University of Amsterdam (UvA)](https://www.uva.nl/en/about-the-uva/about-the-university/ai/ai-policy/vision-on-ai.html)
@@ -139,7 +138,10 @@ Below is a curated list of Dutch universities and institutions with publicly ava
     - [Research](https://www.tilburguniversity.edu/about/conduct-and-integrity/privacy-and-security/artificial-intelligence)
     - [Education](https://www.tilburguniversity.edu/sites/default/files/download/AI%20in%20Education%20-%20Factsheet_0.pdf)
 
+---
+
 ### National / sector organisations
+When univeristy-specific guidance on AI and/or data is missing, consult sector and national policies. 
 
 - [Autoriteit Persoonsgegevens: AI and algorithms](https://www.autoriteitpersoonsgegevens.nl/en/themes/algorithms-ai): Dutch Data Protection Authority guidance on AI and privacy 
 - [GDPR preconditions for generative AI](https://www.autoriteitpersoonsgegevens.nl/en/documents/gdpr-preconditions-for-generative-ai): Practical conditions for using generative AI systems   
@@ -147,6 +149,7 @@ Below is a curated list of Dutch universities and institutions with publicly ava
 - [SURF AI and data guidance](https://www.surf.nl/en/themes/artificial-intelligence)
 
 ### European Union
+When in doubt, consult EU-level policies:
 
 - [EU AI Act](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai) — Overview of the EU’s regulatory framework for artificial intelligence  
 - [GDPR overview (European Commission)](https://commission.europa.eu/law/law-topic/data-protection/data-protection-eu_en) — Core data protection framework governing personal data use  
