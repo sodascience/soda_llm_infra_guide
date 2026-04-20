@@ -2,30 +2,20 @@
 
 ## What is this?
 
-Institutional chat interfaces are university-provided or university-approved LLM chat tools that prioritize policy alignment, user management, and safer data handling compared with public consumer tools.
+Institutional chat interfaces are university-provided or university-approved LLM chat tools that prioritize policy alignment, user management, and safer data handling compared to public consumer tools.
+
+---
 
 ## How it works (simple explanation)
 
-Your institution provides a chat interface linked to institutional identity, governance policies, and support channels. Researchers use it similarly to public chat tools, but within a managed framework.
+Your institution provides a chat interface linked to institutional identity, governance policies, and support channels. Researchers use it similarly to public chat tools, but within a managed environment where data handling, access, and usage are subject to institutional rules.
+
+---
 
 ## Concrete examples (tools/platforms)
 
-- [UvA AI Chat](https://www.uva.nl/en/about-the-uva/about-the-university/ai/ai-in-education/uva-ai-chat/uva-ai-chat.html?utm_source=chatgpt.com)
-- Institutions still experimenting with pilots, for example Fontys discussions and evaluation context: [Fontys example paper](https://arxiv.org/abs/2512.08978v1)
-- Movement toward broader institution-wide platforms such as [EduGenAI](https://npuls.nl/edugenai)
+- [UvA AI Chat](https://www.uva.nl/en/about-the-uva/about-the-university/ai/ai-in-education/uva-ai-chat/uva-ai-chat.html) — A university-wide AI chat service provided by the University of Amsterdam. It offers a ChatGPT-like interface for students and staff, with a focus on privacy, responsible use, and digital autonomy. The system is designed to keep user data within a controlled institutional environment and to provide guidance aligned with university policies on AI use in education and research.
 
-## Example workflow (step-by-step)
+- Institutions experimenting with internal AI platforms — Many Dutch universities are currently piloting or evaluating institution-wide AI chat and API access solutions. For example, the [Fontys paper](https://arxiv.org/abs/2512.08978v1) describes a pilot AI gateway platform at Fontys Hogeschool that provides a chat interface connected to multiple model providers, with centralized governance, logging, and policy enforcement. These systems aim to give users flexibility while maintaining institutional control over data flows and usage.
 
-1. Check your institution's approved AI usage policy.
-2. Request access via institutional login process.
-3. Use the chat interface for low-risk and low-effort tasks (summaries, brainstorming, draft feedback).
-4. Avoid entering restricted data unless explicitly allowed.
-5. Document prompt patterns and outcomes for team consistency.
-
-## Pros and cons
-
-| Pros | Cons |
-|---|---|
-| Easier onboarding with local support | Less flexible than custom API/deployment setups |
-| Better governance and GDPR framing | Feature set may lag behind commercial tools |
-| Strong fit for broad institutional use | May not satisfy advanced technical requirements |
+- Movement toward shared national platforms such as [EduGenAI](https://npuls.nl/edugenai) — A collaborative initiative (e.g., within Npuls and SURF-related efforts) to develop a broader, education-focused generative AI platform. The goal is to provide scalable, institution-wide access to LLMs with built-in governance, integration with educational workflows, and support for multiple institutions, rather than each university building its own standalone solution.
