@@ -10,6 +10,20 @@ It is written for mixed audiences:
 
 ---
 
+## Social Science and Humanities Research with LLMs
+
+Among other disciplines, LLMs are increasingly used across the social sciences and humanities (SSH), from digitizing historical archives to coding open-ended survey responses and analyzing legal or policy texts. Below are example research projects from the [ODISSEI Social Data Science (SoDa)](https://odissei-soda.nl/) team that illustrate how LLMs can support SSH research:
+
+- **[BiodiversityASSET](https://github.com/sodascience/BiodiversityASSET)** — LLM-powered analysis of biodiversity-related investment activities in financial reports.
+- **[Future Time Orientation and Life Project](https://github.com/sodascience/LifeProject)** — A large-scale LLM pipeline to automatically classify life goals expressed in text into theoretically defined life domains across 15 cultures.
+- **[LLMs for Self-Regulated Learning](https://odissei-soda.nl/projects/)** — Applying LLMs to measure the quality of self-regulated learning behaviors reflected in conversation data from higher education students.
+- **[Judicial Signals](https://github.com/sodascience/judicial_signals)** — An NLP pipeline for legal texts, studying the separation of powers between the judiciary and the legislature in practice.
+- **[Historical Disease Database](https://github.com/sodascience/disease_database)** — Building a historical database of diseases such as cholera for Dutch municipalities, based on 19th- and 20th-century newspaper archives (Delpher). 
+
+For more examples, see the [SoDa projects overview](https://odissei-soda.nl/projects/).
+
+---
+
 ## What You Will Find Here
 
 - A clear progression of LLM usage modes, from low effort to high control
@@ -17,15 +31,11 @@ It is written for mixed audiences:
 - Decision support on governance, GDPR, and access pathways
 - Concrete examples and step-by-step workflows for each mode
 
----
-
 ## How To Read This Guide
 
 1. Start with the chapter overviews.
 2. Choose a usage mode that matches your project needs.
 3. Use the detailed pages to implement responsibly and efficiently.
-
----
 
 ## Chapters
 
@@ -63,6 +73,8 @@ For each usage mode, the following topics are addressed.
 
 ### [Governance](./governance/overview.md)
 Focuses on aspects of data and privacy governance on the use of LLMs at Dutch Universities and on the national and EU levels. 
+
+
 
 <!-- #### Glossary
 > A list of terms referred to in this infrastructure guide, with explanations.  -->
