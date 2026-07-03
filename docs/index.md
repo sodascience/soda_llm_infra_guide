@@ -17,9 +17,13 @@ It is written for mixed audiences:
 
 ## How To Read This Guide
 
-1. Start with the chapter overviews.
+> Check out the [Decision Tree](#decision-tree) to find the page that matches your situation.
+
+Alternative, 
+
+1. Start with the [Chapter Overview](#chapter-overview).
 2. Choose a usage mode that matches your project needs.
-3. Use the detailed pages to implement responsibly and efficiently.
+3. Find the corresponding page (see menu on the left).
 
 ---
 
@@ -36,10 +40,12 @@ Among other disciplines, LLMs are increasingly used across the social sciences a
 For more examples, see the [SoDa projects overview](https://odissei-soda.nl/projects/).
 
 ---
-## Chapters
+
+## Chapter Overview { #chapter-overview }
 
 ### [How to use LLMs in research](./how-to-use-llms/overview.md)
-Focuses on usage modes: chat, dashboards, APIs, local deployments, remote deployments, and HPC.
+Focuses on six usage modes: 
+>chat, dashboards, APIs, local deployments, remote deployments, and HPC.
 
 For each usage mode, the following topics are addressed.
 
@@ -73,7 +79,11 @@ For each usage mode, the following topics are addressed.
 ### [Governance](./governance/overview.md)
 Focuses on aspects of data and privacy governance on the use of LLMs at Dutch Universities and on the national and EU levels. 
 
+## Which Chapter/Page Should You Read First? { #decision-tree }
 
+Not sure where to start? Use this decision tree to find the page that matches your situation.
+
+![Decision tree for choosing which chapter to read](./img/decision-tree.svg)
 
 <!-- #### Glossary
 > A list of terms referred to in this infrastructure guide, with explanations.  -->
