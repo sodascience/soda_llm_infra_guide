@@ -4,6 +4,7 @@ site_url: https://example.org/llm-infra-guide
 
 theme:
   name: gitbook
+  custom_dir: theme_overrides
 
 markdown_extensions:
   - admonition
