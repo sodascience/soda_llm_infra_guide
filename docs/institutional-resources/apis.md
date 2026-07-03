@@ -18,6 +18,6 @@ Requests are routed through institutional infrastructure, where usage may be log
 
 ## Concrete examples (tools/platforms)
 
-- [SURF AI Hub / WiLLMa (pilot phase)](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/219086851/AI-Hub+WiLLMa+Pilot+phase): A SURF initiative providing researchers with access to LLM APIs via national infrastructure. Originally developed as the WiLLMa pilot, it offers programmatic access to multiple models through a centralized platform. The system is designed to support experimentation with LLMs while maintaining control over data flows, usage, and compliance. It is evolving toward a broader AI Hub service that integrates with institutional access and governance.
+- [SURF AI Hub / WiLLMa (pilot phase)](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/219086851/AI-hub+WiLLMa+Pilot+phase): A SURF initiative providing researchers with access to LLM APIs via national infrastructure. Originally developed as the WiLLMa pilot, it offers programmatic access to multiple models through a centralized platform. The system is designed to support experimentation with LLMs while maintaining control over data flows, usage, and compliance. It is evolving toward a broader AI Hub service that integrates with institutional access and governance.
 
     - Access onboarding (pilot): [Sign up here](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/222464732/Onboarding#Onboarding-Step1%3AShowinterest) Researchers can register interest and request access as part of the pilot program, subject to availability and institutional affiliation.
