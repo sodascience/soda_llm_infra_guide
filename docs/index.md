@@ -8,6 +8,19 @@ It is written for mixed audiences:
 - Researchers with some experience who want to scale up responsibly
 - Researchers who must balance speed, privacy, and governance with institutional infrastructure options
 
+## What You Will Find Here
+
+- A clear progression of LLM usage modes, from low effort to high control
+- Practical guidance on Dutch institutional infrastructure
+- Decision support on governance, GDPR, and access pathways
+- Concrete examples and step-by-step workflows for each mode
+
+## How To Read This Guide
+
+1. Start with the chapter overviews.
+2. Choose a usage mode that matches your project needs.
+3. Use the detailed pages to implement responsibly and efficiently.
+
 ---
 
 ## Social Science and Humanities Research with LLMs
@@ -23,20 +36,6 @@ Among other disciplines, LLMs are increasingly used across the social sciences a
 For more examples, see the [SoDa projects overview](https://odissei-soda.nl/projects/).
 
 ---
-
-## What You Will Find Here
-
-- A clear progression of LLM usage modes, from low effort to high control
-- Practical guidance on Dutch institutional infrastructure
-- Decision support on governance, GDPR, and access pathways
-- Concrete examples and step-by-step workflows for each mode
-
-## How To Read This Guide
-
-1. Start with the chapter overviews.
-2. Choose a usage mode that matches your project needs.
-3. Use the detailed pages to implement responsibly and efficiently.
-
 ## Chapters
 
 ### [How to use LLMs in research](./how-to-use-llms/overview.md)
