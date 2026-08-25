@@ -1,29 +1,24 @@
 # The SoDa Guide to LLM Computing Infrastructure in the Netherlands
 
-This guide is intended to help researchers in the Netherlands identify and select the right (institutional) infrastructure for using large language models (LLMs) in their research, from simple chat tools to advanced high-performance computing (HPC) workflows. To faciliate this, the guide starts with a walk-through of different ways of using LLMs in typical research workflows (e.g., chat, dashboards, APIs, local and remote deployments, HPC). It then provides an overview of related institutional resources in the Netherlands, including university services and national infrastructure.
+This guide helps researchers in the Netherlands choose a practical way to use large language models (LLMs) in research. It starts with simple, low-effort options such as chat tools and moves toward more complex infrastructure such as APIs, local or remote deployments, and high-performance computing (HPC).
 
-It is written for mixed audiences:
+The guide is created and maintained by the [ODISSEI Social Data Science (SoDa) team](https://odissei-soda.nl/). [Qixiang Fang](https://github.com/fqixiang) is the project lead and contact person.
 
-- Researchers new to LLMs who want to understand their options
-- Researchers with some experience who want to scale up responsibly
-- Researchers who must balance speed, privacy, and governance with institutional infrastructure options
+It is for researchers who want to:
+
+- understand the main ways to use LLMs in research;
+- decide when a simple tool is enough and when more control is needed;
+- identify Dutch institutional options when privacy, sensitive data, governance, or scale matter.
 
 ## What You Will Find Here
 
-- A clear progression of LLM usage modes, from low effort to high control
-- Practical guidance on Dutch institutional infrastructure
-- Decision support on governance, GDPR, and access pathways
-- Concrete examples and step-by-step workflows for each mode
+- **How to use LLMs in research**: a progression from chat to dashboards, APIs, deployments, and HPC. As you move down the decision tree, setup, technical complexity, and infrastructure control generally increase.
+- **Institutional resources**: Dutch university and national infrastructure options, including when they are useful for privacy-sensitive work, restricted data, procurement, access support, or larger compute needs.
+- **Governance**: guidance on GDPR, institutional rules, and responsible use of LLMs with research data.
 
 ## How To Read This Guide
 
-> Check out the [Decision Tree](#decision-tree) to find the page that matches your situation.
-
-Alternative, 
-
-1. Start with the [Chapter Overview](#chapter-overview).
-2. Choose a usage mode that matches your project needs.
-3. Find the corresponding page (see menu on the left).
+If you are new to the guide, start with the [decision tree](#decision-tree). It points you to the chapter that best matches your task, data, and technical needs.
 
 ---
 
@@ -44,40 +39,21 @@ For more examples, see the [SoDa projects overview](https://odissei-soda.nl/proj
 ## Chapter Overview { #chapter-overview }
 
 ### [How to use LLMs in research](./how-to-use-llms/overview.md)
-Focuses on six usage modes: 
->chat, dashboards, APIs, local deployments, remote deployments, and HPC.
+Compare six ways of working with LLMs:
 
-For each usage mode, the following topics are addressed.
+> **chat -> dashboards -> APIs -> local deployment -> remote deployment -> HPC**
 
-- **What is this?**
+The order matters. Moving right usually means more setup, more technical skill, and more control over data flow, models, automation, or compute scale.
 
-- **When should you use it?**
-
-- **When should you NOT use it?**
-
-- **How it works (simple explanation)**
-
-- **Concrete examples (tools/platforms)**
-
-- **Example workflow (step-by-step)**
-
-- **Pros and cons**
-
-- **Learning resources**
+Each page explains what the option is, when to use it, when not to use it, how it works, example tools, typical workflows, pros and cons, and learning resources.
 
 ### [Institutional resources](./institutional-resources/overview.md)
-Focuses on context in the Netherlands: university services, SURF infrastructure, and access models.
+Focuses on infrastructure and support available in the Netherlands, including university services, SURF infrastructure, and national HPC resources.
 
-For each usage mode, the following topics are addressed.
-
-- **What is this?**
-
-- **How it works (simple explanation)**
-
-- **Concrete examples (tools/platforms)**
+This chapter is most useful when your project involves personal data, sensitive or restricted data, institutional approval, procurement, shared team access, long-running workflows, or compute needs beyond a laptop.
 
 ### [Governance](./governance/overview.md)
-Focuses on aspects of data and privacy governance on the use of LLMs at Dutch Universities and on the national and EU levels. 
+Explains data and privacy governance for LLM use at Dutch universities and at national and EU levels.
 
 ## Which Chapter/Page Should You Read First? { #decision-tree }
 
