@@ -43,7 +43,7 @@ Compare six ways of working with LLMs:
 
 > **chat -> dashboards -> APIs -> local deployment -> remote deployment -> HPC**
 
-The order matters. Moving right usually means more setup, more technical skill, and more control over data flow, models, automation, or compute scale.
+The order matters: moving to the right generally requires more setup and technical expertise, but also provides more control over data flows, models, automation, compute scale, and computing resources.
 
 Each page explains what the option is, when to use it, when not to use it, how it works, example tools, typical workflows, pros and cons, and learning resources.
 
