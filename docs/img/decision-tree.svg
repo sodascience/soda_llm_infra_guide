@@ -1,0 +1,110 @@
+<svg viewBox="0 0 900 1090" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="900" height="1090" fill="#ffffff"/>
+
+  <!-- connectors: main spine -->
+  <line x1="260" y1="72" x2="260" y2="133" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="260" y1="225" x2="260" y2="273" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="260" y1="365" x2="260" y2="413" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="260" y1="505" x2="260" y2="553" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="260" y1="645" x2="260" y2="693" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="260" y1="785" x2="260" y2="846" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="278" y="253" font-size="15" font-weight="bold" fill="#dc2626">No</text>
+  <text x="278" y="393" font-size="15" font-weight="bold" fill="#dc2626">No</text>
+  <text x="278" y="533" font-size="15" font-weight="bold" fill="#059669">Yes</text>
+  <text x="278" y="673" font-size="15" font-weight="bold" fill="#dc2626">No</text>
+  <text x="278" y="819" font-size="15" font-weight="bold" fill="#dc2626">No</text>
+
+  <!-- connectors: yes/no branches to the right -->
+  <line x1="420" y1="180" x2="543" y2="180" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="475" y="171" font-size="15" font-weight="bold" fill="#059669">Yes</text>
+
+  <line x1="420" y1="320" x2="543" y2="320" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="475" y="311" font-size="15" font-weight="bold" fill="#059669">Yes</text>
+
+  <line x1="420" y1="460" x2="543" y2="460" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="478" y="451" font-size="15" font-weight="bold" fill="#dc2626">No</text>
+
+  <line x1="420" y1="600" x2="543" y2="600" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="475" y="591" font-size="15" font-weight="bold" fill="#059669">Yes</text>
+
+  <line x1="420" y1="740" x2="543" y2="740" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="475" y="731" font-size="15" font-weight="bold" fill="#059669">Yes</text>
+
+  <!-- Start -->
+  <rect x="110" y="8" width="300" height="64" rx="14" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+  <text x="260" y="45" text-anchor="middle" font-size="16" font-weight="bold" fill="#1f2937">What do you need to do</text>
+  <text x="260" y="63" text-anchor="middle" font-size="16" font-weight="bold" fill="#1f2937">with an LLM?</text>
+
+  <!-- Q1 -->
+  <rect x="100" y="135" width="320" height="90" rx="14" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+  <text x="260" y="172" text-anchor="middle" font-size="15" fill="#1f2937">Occasional, exploratory use</text>
+  <text x="260" y="192" text-anchor="middle" font-size="15" fill="#1f2937">only (no automation needed)?</text>
+
+  <!-- Leaf 1: Chat interface -->
+  <rect x="545" y="148" width="230" height="64" rx="14" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+  <text x="660" y="185" text-anchor="middle" font-size="16" font-weight="bold" fill="#065f46">Chat interface</text>
+
+  <!-- Q2 -->
+  <rect x="100" y="275" width="320" height="90" rx="14" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+  <text x="260" y="312" text-anchor="middle" font-size="15" fill="#1f2937">Prefer a ready-made no-code</text>
+  <text x="260" y="332" text-anchor="middle" font-size="15" fill="#1f2937">tool for repeated tasks?</text>
+
+  <!-- Leaf 2: LLM dashboards -->
+  <rect x="545" y="288" width="230" height="64" rx="14" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+  <text x="660" y="325" text-anchor="middle" font-size="16" font-weight="bold" fill="#065f46">LLM dashboards</text>
+
+  <!-- Q3 -->
+  <rect x="100" y="415" width="320" height="90" rx="14" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+  <text x="260" y="452" text-anchor="middle" font-size="15" fill="#1f2937">Working with sensitive or</text>
+  <text x="260" y="472" text-anchor="middle" font-size="15" fill="#1f2937">restricted data (e.g. GDPR)?</text>
+
+  <!-- Leaf 3: APIs -->
+  <rect x="545" y="428" width="230" height="64" rx="14" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+  <text x="660" y="465" text-anchor="middle" font-size="16" font-weight="bold" fill="#065f46">APIs</text>
+
+  <!-- Q4 -->
+  <rect x="100" y="555" width="320" height="90" rx="14" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+  <text x="260" y="592" text-anchor="middle" font-size="15" fill="#1f2937">Own GPU workstation or</text>
+  <text x="260" y="612" text-anchor="middle" font-size="15" fill="#1f2937">server available for this data?</text>
+
+  <!-- Leaf 4: Local deployment -->
+  <rect x="545" y="568" width="230" height="64" rx="14" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+  <text x="660" y="605" text-anchor="middle" font-size="16" font-weight="bold" fill="#065f46">Local deployment</text>
+
+  <!-- Q5 -->
+  <rect x="100" y="695" width="320" height="90" rx="14" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+  <text x="260" y="732" text-anchor="middle" font-size="15" fill="#1f2937">Need large-scale compute</text>
+  <text x="260" y="752" text-anchor="middle" font-size="15" fill="#1f2937">(fine-tuning, big batch jobs)?</text>
+
+  <!-- Leaf 5: HPC -->
+  <rect x="545" y="708" width="230" height="64" rx="14" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+  <text x="660" y="745" text-anchor="middle" font-size="16" font-weight="bold" fill="#065f46">HPC</text>
+
+  <!-- Final leaf: Remote deployment -->
+  <rect x="110" y="848" width="300" height="64" rx="14" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+  <text x="260" y="885" text-anchor="middle" font-size="16" font-weight="bold" fill="#065f46">Remote deployment</text>
+
+  <!-- divider -->
+  <line x1="60" y1="950" x2="840" y2="950" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="450" y="940" text-anchor="middle" font-size="14" fill="#475569">Also worth checking, whichever path you take:</text>
+
+  <!-- Callout 1: Institutional resources -->
+  <rect x="90" y="980" width="340" height="80" rx="14" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="260" y="1010" text-anchor="middle" font-size="14" fill="#1f2937">Need concrete Dutch</text>
+  <text x="260" y="1028" text-anchor="middle" font-size="14" fill="#1f2937">institutional options?</text>
+  <text x="260" y="1049" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d4ed8">Institutional resources</text>
+
+  <!-- Callout 2: Governance -->
+  <rect x="470" y="980" width="340" height="80" rx="14" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="640" y="1010" text-anchor="middle" font-size="14" fill="#1f2937">Questions on privacy, GDPR,</text>
+  <text x="640" y="1028" text-anchor="middle" font-size="14" fill="#1f2937">or institutional rules?</text>
+  <text x="640" y="1049" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d4ed8">Governance</text>
+</svg>
