@@ -27,3 +27,36 @@ body.with-search #book-search-results .search-results {
   line-height: 1.3;
   word-break: break-word;
 }
+
+/* Previous and next page links. */
+.page-navigation {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.page-navigation a {
+  max-width: 48%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.page-navigation a[rel="next"] {
+  margin-left: auto;
+  text-align: right;
+}
+
+@media (max-width: 480px) {
+  .page-navigation {
+    flex-direction: column;
+  }
+
+  .page-navigation a {
+    max-width: 100%;
+  }
+}
